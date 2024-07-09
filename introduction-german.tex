@@ -15,34 +15,39 @@ praktischen Potenzials des Quantencomputings bleibt der Zugang zu dieser
 Technologie aufgrund der inhärenten Komplexität von Quantenalgorithmen
 und der erforderlichen tiefgreifenden Kenntnisse in Quantenmechanik und
 -informatik limitiert \cite{Chitransh2022}. So unterscheidet sich die Programmierung
-von Quantencomputern stark von der im klassischen Bereich \cite{Rieffel2011}. 
-Cerezo et al. zeigen insbesondere vielversprechende Anwendungen auf, wie die Suche nach
+von Quantencomputern mitunter von der im klassischen Bereich \cite{Rieffel2011}. 
+Cerezo et al. \cite{Cerezo2021} zeigen insbesondere vielversprechende Anwendungen auf, wie die Suche nach
 Grundzuständen von Molekülen, die Simulation der Dynamik von
-Quantensystemen und die Lösung linearer Gleichungssystemen \cite{Cerezo2021}. 
+Quantensystemen und die Lösung linearer Gleichungssystemen. 
 
-In der klassischen Softwareentwicklung bieten Low-Code-Entwicklungsumgebungen einen Ansatz, um
-die Barriere für den Einstieg in die Programmierung zu senken. Dies wird
-emöglicht durch Abstraktion der technischen Komplexitäten und
-Bereitstellung intuitiver, grafischer Entwicklungswerkzeuge \cite{Juhas2022}. Die
+In der klassischen Softwareentwicklung bieten Low-Code-Entwicklungsumgebungen einen Ansatz, 
+um die Barriere für den Einstieg in die Programmierung zu senken. Dies wird durch die 
+Abstraktion technischer Komplexitäten und die Bereitstellung intuitiver, grafischer 
+Entwicklungswerkzeuge ermöglicht \cite{Juhas2022}. Low-Code-Plattformen bieten auch 
+erfahrenen Entwicklern leistungsfähige Tools. 
+Diese Plattformen ermöglichen durch grafische Layouts eine effizientere Verwaltung komplexer 
+Zustände und verbessern somit die Effizienz und Wartbarkeit des Codes. Die
 Anwendung von Low-Code-Plattformen erweist sich insbesondere bei
 einfacheren Projekten als vorteilhaft, stößt jedoch bei komplexeren
 Anwendungen an ihre Grenzen \cite{Buscher2022}. 
 In dieser Arbeit werden die Konzepte der Low-Code-Entwicklung und des Model-Driven Engineering (MDE) 
-weitestgehend synonym verwendet. Beide Ansätze zielen darauf ab, die Softwareentwicklung durch 
-den Einsatz von Modellierungstechniken zu vereinfachen und zu beschleunigen. 
-Während MDE traditionell stärker auf die formale Modellierung und Transformationen 
-fokussiert ist, betont die Low-Code-Entwicklung die visuelle Programmierung und 
-die Minimierung manuellen Codierens. Diese Unterschiede sind für die Zielsetzung dieser 
-Arbeit, nämlich die Entwicklung eines Low-Code-Frameworks für Quantencomputing-Anwendungen, 
-von untergeordneter Bedeutung. Die gemeinsame Verwendung der Begriffe unterstreicht den 
-integrativen Charakter des Ansatzes und erleichtert die Diskussion der relevanten Konzepte. 
-Beide Ansätze unterstützen sogenannte "Citizen Developer", indem sie es ermöglichen, 
-dass auch nicht-professionelle Entwickler aktiver in den Entwicklungsprozess eingebunden werden können.
-Eine detaillierte Betrachtung der Unterschiede zwischen MDE und Low-Code-Entwicklung 
-erfolgt später, um ihre spezifischen Eigenschaften und Potenziale zu beleuchten.
+weitestgehend synonym verwendet. Die tiefergehende Begründung hierfür 
+wird im Abschnitt der theoretischen Grundlagen detaillierter beschrieben. 
+Beide Ansätze zielen darauf ab, die Softwareentwicklung durch 
+den Einsatz von Modellierungstechniken zu vereinfachen und zu beschleunigen und 
+unterstützen sogenannte "Citizen Developer", also nicht-professionelle Entwickler, 
+indem sie es ermöglichen, dass auch diese aktiver in den Entwicklungsprozess eingebunden werden können.
+Während Model-Driven Engineering (MDE) traditionell auf die formale Modellierung und 
+Transformationen fokussiert ist, liegt der Schwerpunkt der Low-Code-Entwicklung auf der 
+visuellen Programmierung und der Automatisierung vieler Entwicklungsprozesse. 
+Diese Unterschiede sind für die Zielsetzung dieser Arbeit, nämlich die Entwicklung eines 
+Low-Code-Frameworks für Quantencomputing-Anwendungen, von untergeordneter Bedeutung. 
+Die gemeinsame Verwendung der Begriffe unterstreicht den integrativen Charakter 
+von Low-Code Entwicklung und erleichtert die Diskussion der relevanten Konzepte. 
 
-Im Bereich der Quantencomputing-Softwareentwicklung wird zunehmend das 
-Potenzial von Model-Driven Engineering (MDE) erkannt. Gemeinhardt, Garmendia und Wimmer (2021) 
+
+Auch im Bereich der Quantencomputing-Softwareentwicklung wird der Einsatz von 
+Model-Driven Engineering (MDE) bereits erforscht. Gemeinhardt, Garmendia und Wimmer \cite{gemeinhardt_2021} 
 betonen in ihrer Arbeit die Vorteile von MDE-Techniken, wie domänenspezifischen 
 Modellierungssprachen und generativen Methoden, zur Beschleunigung und Vereinfachung 
 der Quantensoftwareentwicklung. Diese Ansätze bieten eine zusätzliche Abstraktionsebene 
@@ -51,32 +56,31 @@ von Quantencomputing durch Fachleute ermöglicht wird. Diese Perspektive unterst
 die Relevanz der vorliegenden Arbeit, ein Low-Code-Framework für Quantencomputing-Anwendungen 
 zu entwickeln, das auf MDE-Prinzipien basiert \cite{gemeinhardt_2021}.
 
-Diese Arbeit beabsichtigt, zu
-untersuchen, inwiefern Prinzipien der Low-Code-Entwicklung aus dem
-klassischen Computing übertragbar auf Quantencomputing sind. Basierend
-auf den Ergebnissen soll eine Schnittstelle zwischen Technologie des
-Quantencomputings und der Zugänglichkeit durch Low-Code-Ansätze
-geschafft und prototypisch umgesetzt werden. Dabei soll insbesondere
-erforscht werden, welche Kriterien und Low-Code-Methoden zur
-Modellierung und Implementierung von Quantenschaltkreisen eingesetzt
-werden können, um die Anwendung von Quantencomputern einem breiteren
-Spektrum von Nutzern zugänglich zu machen. So
-könnten Experten aus den genannten Domänen von Quantencomputern
-profitieren, ohne selbst tieferes Fachwissen im Quantencomputing zu
-benötigen \cite{Motta2022}.
+In dieser Arbeit wird untersucht, inwiefern Prinzipien der Low-Code-Entwicklung aus dem
+klassischen Computing übertragbar auf Quantencomputing sind. Basierend auf den Ergebnissen 
+soll die Machbarkeit der Low-Code-Entwicklung für Quantencomputing exemplarisch an 
+einem Prototyp untersucht werden. Dabei wird eine Schnittstelle geschaffen, die die 
+Technologie des Quantencomputings zugänglicher macht. Bereits vor der Literaturrecherche 
+werden Kriterien festgelegt, die auf grundlegenden Kenntnissen des Quantencomputings 
+basieren. Diese Kriterien werden dann mit dem Prototyp in der Praxis validiert. Das 
+Ziel ist es, einen einfacheren Zugang zu Quantencomputern zu ermöglichen, sodass 
+Experten aus verschiedenen Domänen profitieren können, ohne tiefere Fachkenntnisse 
+im Quantencomputing zu benötigen \cite{Motta2022}.
 
-In einem Paper von Cabot\cite{Cabot_2020} wird aufgezeigt, dass es im Bereich der Low-Code-Entwicklung derzeit an einer 
-starken Open-Source-Community fehlt. Durch Open-Source-Modellierungswerkzeuge können 
-bestehende Lücken geschlossen und die damit verbundenen Herausforderungen 
-besser adressiert werden. Die Bereitstellung von Open-Source-Lösungen bietet die Möglichkeit, die Zugänglichkeit und 
-Anpassungsfähigkeit von Low-Code-Plattformen zu verbessern, sowie die Innovationskraft und Zusammenarbeit innerhalb der Community zu fördern.
+In einem Beitrag von Cabot \cite{Cabot_2020} wird aufgezeigt, dass es im Bereich der 
+Low-Code-Entwicklung derzeit an einer starken Open-Source-Community fehlt. 
+Open-Source-Modellierungswerkzeuge können helfen, bestehende Lücken zu schließen 
+und die damit verbundenen Herausforderungen besser zu adressieren. Während auch 
+Closed-Source-Lösungen dies ermöglichen, bieten Open-Source-Ansätze die zusätzliche 
+Möglichkeit, die Zugänglichkeit und Anpassungsfähigkeit von Low-Code-Plattformen zu verbessern. 
+Dies fördert die Innovationskraft und Zusammenarbeit innerhalb der Community.
 
-Das Hauptziel dieser Arbeit ist die Entwicklung eines Frameworks, das
-die Prinzipien der Low-Code-Programmierung mit den Anforderungen des
-Quantencomputings verknüpft. Diese Verbindung soll durch die
-prototypische Implementierung einer grafischen Sprache für
-Quantencomputer realisiert werden. Zur Erreichung dieses Ziels werden
-folgende Aufgaben definiert:
+Das Hauptziel dieser Arbeit ist die Recherche und Analyse existierender Low-Code-Tools 
+auf ihre Tauglichkeit als Quantencomputing-Tools. Diese Untersuchung bildet die Grundlage 
+für die Entwicklung eines Frameworks, das die Prinzipien der Low-Code-Programmierung 
+mit den Anforderungen des Quantencomputings verknüpft. Als ergänzendes Werkzeug wird 
+eine prototypische Implementierung einer grafischen Sprache für Quantencomputer erstellt. 
+Zur Erreichung dieses Ziels werden folgende Aufgaben definiert:
 
 \begin{itemize}
 \item
@@ -90,10 +94,10 @@ folgende Aufgaben definiert:
   aus der vorausgegangen Analyse.
 \end{itemize}
 
-Durch die Umsetzung dieser Aufgaben wird ein neues prototypisches
-Framework entwickelt, das die Anwendung von Quantencomputing durch
-Low-Code-Methoden zugänglicher und benutzerfreundlicher macht, und somit
-die Entwicklung und das Testen von Quantum Circuits vereinfacht.
+Durch die Umsetzung dieser Aufgaben wird ein neues prototypisches Framework entwickelt, 
+das die Anwendung von Quantencomputing durch Low-Code-Methoden zugänglicher und benutzerfreundlicher 
+macht. Dies vereinfacht die Entwicklung und das Testen von Quantum Circuits und legt den 
+Grundstein für die weitere Entwicklung von QC-Low-Code-Tools.
 
 % \textbf{Bemerkung}
 
@@ -113,9 +117,9 @@ die Entwicklung und das Testen von Quantum Circuits vereinfacht.
 Die Arbeit ist in folgender Weise gegliedert:
 \paragraph{\cref{chap:theorie} - Theoretischer Hintergund:} Hier werden die theoretischen Grundlagen dieser Arbeit beschrieben, vor 
 allem Low-Code-Entwicklung, Model-Driven Engineering und Quantencomputing.
-\paragraph{\cref{chap:slr} - Systematische Literaturrecherche:} beschreibt die Methodik der systematischen Literaturrecherche sowie die Ergebnisse 
+\paragraph{\cref{chap:slr} - Systematische Literaturrecherche:} Beschreibt die Methodik der systematischen Literaturrecherche sowie die Ergebnisse 
 und Interpretation dieser.
-\paragraph{\cref{chap:prototyp} - Prototypische Entwicklung des Low-Code-Frameworks für Quantencomputing:} beschreibt die 
+\paragraph{\cref{chap:prototyp} - Prototypische Entwicklung des Low-Code-Frameworks für Quantencomputing:} Beschreibt die 
 Entwicklung des Prototyps, einschließlich der Anforderungen, Architektur, Implementierung und Herausforderungen.
-\paragraph{\cref{chap:related} - Verwandte Arbeiten:} stellt relevante wissenschaftliche Arbeiten vor, die sich mit ähnlichen Themen befassen.
+\paragraph{\cref{chap:related} - Verwandte Arbeiten:} Stellt relevante wissenschaftliche Arbeiten vor, die sich mit ähnlichen Themen befassen.
 \paragraph{\cref{chap:zusfas} - Fazit und Ausblick:} Hier werden die Ergebnisse der Arbeit zusammengefasst und Anknüpfungspunkte vorgestellt.
