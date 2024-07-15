@@ -86,7 +86,8 @@ Low-Code-Plattformen extrahiert. Diese Daten werden anschließend zusammengefüh
 umfassendes Bild der aktuellen Forschungslandschaft und potenzieller Entwicklungspfade für 
 das geplante Framework zu zeichnen.
 
-Der Ablauf der systematischen Literaturrecherche ist in Abbildung \ref{fig:slr_kitchenham} dargestellt. 
+Der Ablauf der systematischen Literaturrecherche nach Brereton et al. \cite{brereton2007lessons} 
+ist in Abbildung \ref{fig:slr_kitchenham} dargestellt. 
 Diese Grafik veranschaulicht die Schritte der SLR. Jeder dieser Schritte trägt zur systematischen und 
 strukturierten Erfassung der relevanten Literatur bei und bildet die Grundlage für die nachfolgende 
 Datenanalyse und Interpretation.
@@ -94,7 +95,7 @@ Datenanalyse und Interpretation.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{graphics/slr_kitchenham_ablauf.png}
-    \caption{Ablauf der systematischen Literaturrecherche nach Kitchenham}
+    \caption{Ablauf der systematischen Literaturrecherche nach Brereton et al. \cite{brereton2007lessons}}
     \label{fig:slr_kitchenham}
 \end{figure}
 
@@ -162,12 +163,25 @@ in die systematische Literaturrecherche wird nicht nur die Effizienz des Prozess
 die Qualität und Tiefe der Forschungsergebnisse erhöht.
 
 \section{Durchführung der Literaturrecherche}
-Basierend auf den im vorherigen Abschnitt festgelegten Kriterien wurde die systematische Literaturrecherche (SLR) 
+Basierend auf den im vorherigen Abschnitt festgelegten Kriterien wird die systematische Literaturrecherche (SLR) 
 durchgeführt. Im Folgenden werden die einzelnen Schritte der Recherche detailliert dokumentiert und die Ergebnisse 
 visualisiert. Dies umfasst die spezifischen Suchanfragen in den ausgewählten wissenschaftlichen Datenbanken, die 
 angewandten Suchlimits sowie die quantitativen Ergebnisse der Suchvorgänge. Durch diese detaillierte Dokumentation 
 wird die Nachvollziehbarkeit und Reproduzierbarkeit der Forschung sichergestellt, während die quantitativen 
 Ergebnisse eine fundierte Basis für die weitere Analyse bieten.
+
+In der Grafik \ref{fig:search_process} ist der Ablauf der Suche nach Publikationen innerhalb der 
+systematischen Literaturrecherche dargestellt. Insbesondere wird hier nochmal erwähnt, dass beim Schritt des 
+Snowballings das Tool ResearchRabbit eingesetzt wird, um die Suche zu unterstützen. 
+
+% include graphics/ablauf_der_suche.png
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{graphics/ablauf_der_suche.png}
+    \caption{Ablauf der systematischen Literaturrecherche}
+    \label{fig:search_process}
+\end{figure}
+
 
 % \begin{itemize}
 %     \item Suchprozess
@@ -221,11 +235,14 @@ Ergebnisse eine fundierte Basis für die weitere Analyse bieten.
 %         \end{itemize}
 % \end{itemize}
 
-Initial wurde die folgende Suchanfrage in den Datenbanken verwendet:
+Um einen ersten Überblick über die Publikationen zu gewinnen wird initial die folgende Suchanfrage in den Datenbanken verwendet:
 
 \begin{quote}
     Suchanfrage 1 (Stand: 12.07.2024):
+
     (''Low-Code Development'' OR ''Quantum Computing'' OR ''Model-Driven Engineering'' OR ''Open Source'')
+
+    Erscheinungsdatum der Publikationen: 2014 - 2024
 \end{quote}
 
 \begin{table}[h!]
@@ -241,18 +258,137 @@ Initial wurde die folgende Suchanfrage in den Datenbanken verwendet:
     \end{tabular}
 \end{table}
     
-
 Diese Suchanfrage lieferte die in \ref{tab:search_1_results} dargestellten Ergebnisse. Dies 
-zeigt die große Bandbreite und Relevanz der Themenfelder. Um die Suche weiter zu verfeinern und 
-relevantere Ergebnisse zu erzielen, wurden spezifischere Suchanfragen und Filter angewendet.
+zeigt die große Bandbreite und Relevanz der Themenfelder. 
+Um hier einen Überblick zu gewinnen, wie die Verteilung der Publikationen zu den jeweiligen Konzepten ausfällt, 
+wird eine Analyse der Anzahl der Publikationen pro Jahr, und Konzept, also MDE oder Low-Code vorgenommen.
 
+Deren Ergebnisse sind in den folgenden Grafiken dargestellt:
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{graphics/lcd_and_mde_publications_over_years.png}
+    \caption{Anzahl der Publikationen zu MDE und LCD pro Jahr}
+    \label{fig:publications_mde_and_lcd_per_year}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{graphics/lcd_publications_over_years.png}
+    \caption{Anzahl der Publikationen LCD pro Jahr}
+    \label{fig:publications_lcd_per_year}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{graphics/mde_publications_over_years.png}
+    \caption{Anzahl der Publikationen zu MDE pro Jahr}
+    \label{fig:publications_mde_per_year}
+\end{figure}
+
+Es fällt auf, dass die Anzahl der Publikationen zu Low-Code-Entwicklung erstens insgesamt deutlich niedriger ausfällt 
+als die Anzahl der Publikationen zu Model-Driven Engineering. Zweitens ist bezüglich des Erscheinungsjahres festzustellen 
+das in Publikation Low-Code-Entwicklung ein deutlich jüngeres Forschungsthema ist.
+
+Da die Anzahl der Ergebnisse zu groß ist um effektiv bearbeitet zu werden, wird die Suche 
+weiter verfeinert. Weiterhin fällt beim ersten Screening auf, dass viele Ergebnisse nicht die 
+gewünschte Schnittmenge aus Low-Code-Entwicklung und Quantencomputing abdecken, sondern 
+nur eines der beiden Themenfelder behandeln. Um also die Relevanz der Ergebnisse zu erhöhen, 
+werden spezifischere Suchanfragen formuliert. 
+
+In einer zweiten Iteration der Suche wurde daher die folgende Suchanfrage verwendet:
 
 \begin{quote}
     Suchanfrage 2 (Stand: 14.07.2024):
+
     (''Low Code Platform'' OR ''Low Code Development'' OR ''Low-Code Development'' OR ''Model-Driven Engineering'') AND (''Quantum Computing'')
+
+    Erscheinungsdatum der Publikationen: 2014 - 2024
 \end{quote}
 
+\begin{table}[h!]
+    \centering
+    \caption{Anzahl der Suchergebnisse für Suchanfrage 2}
+    \label{tab:search_2_results}
+    \begin{tabular}{|l|c|}
+    \hline
+    \textbf{Datenbank} & \textbf{Anzahl der Ergebnisse} \\ \hline
+    Google Scholar & 176 \\ \hline
+    IEEE Xplore & 3 \\ \hline
+    ACM Digital Library & 30 \\ \hline
+    \end{tabular}
+\end{table}
 
+Die Ergebnisse der zweiten Suchanfrage sind in Tabelle \ref{tab:search_2_results} dargestellt. Bzgl. der Erscheinungsjahre fällt auf, dass in 
+IEEE Xplore die drei Publikationen zwischen 2021 und 2023 erschienen. in der ACM Digital Library sind die Publikationen zwischen 2021 und 2024 erschienen. 
+Lediglich die Google Scholar Suche ergab Publikationen, die bis ins Jahr 2014 als Untergrenze der gewünschten Filterung zurückreichen. 
+
+Da die Anzahl der Ergebnisse nun sinnvoller ist, wird mit der Durchsicht der Titel und Abstracts fortgefahren. 
+Begonnen wird mit den drei Ergebnissen aus IEEE Xplore. Durchsicht der Abstracts ergibt, dass die Publikationen 
+alle drei relevant sind, da sie sich inhaltlich in der Schnittmenge aus MDE und Quantencomputing befinden. 
+Um für die Datenbank IEEE Xplore den Schritt der Auswahl vorwegzugreifen, werden die drei Publikationen 
+direkt in die engere Auswahl übernommen. 
+
+Als nächsten werden die Ergebnisse der ACM Digital Library ebenfalls durchgesehen. Dabei werden beim Schritt der Auswahl notwendigerweise die 
+Ergebnisse der ACM Digital Library gezielt gefiltert, um die Relevanz und Qualität der eingeschlossenen Studien sicherzustellen. 
+Proceedings wurden dabei bewusst nicht in die Auswahl einbezogen. Der Grund dafür ist, dass Proceedings häufig eine 
+Vielzahl von Kurzbeiträgen enthalten, die nicht denselben rigorosen Peer-Review-Prozess durchlaufen wie Journal-Artikel 
+und oft eine geringere wissenschaftliche Tiefe aufweisen. Dies kann die Validität und Verlässlichkeit der 
+Forschungsergebnisse beeinträchtigen. Zudem sind Proceedings meist vorläufige Ergebnisse, die 
+später in detaillierteren Journal-Artikeln veröffentlicht werden. Von den initialen 30 Ergebnissen 
+in der ACM Digital Library erfüllten lediglich 4 die AuswahlkriterienDurch diese Vorgehensweise wurde 
+sichergestellt, dass nur qualitativ hochwertige und relevante Studien in die Analyse einbezogen wurden.
+
+Weiterhin wurden Publikationen ausgeschlossen, deren Titel oder Abstract darauf schließen ließen, dass sie thematisch 
+nicht relevant sind. Dieser Ausschluss erfolgte, um die Fokussierung auf Studien zu gewährleisten, die direkt mit 
+Low-Code-Entwicklungsansätzen in Quantencomputing-Anwendungen verbunden sind. Diese strenge Selektion ist entscheidend, um 
+sicherzustellen, dass die verbleibenden Studien tatsächlich die Forschungsfrage adressieren und qualitative Erkenntnisse liefern können. 
+
+Durchsicht der 176 Ergebnisse aus Google Scholar ergab, dass 20 Publikationen die Kriterien für die engere Auswahl erfüllen. 
+
+Für den Schritt der Deduplizierung wurden die Ergebnisse aus den drei Datenbanken zusammengeführt. 
+So ergeben sich ohne Duplikate insgesamt 25 Publikationen, die für die weitere Analyse in Betracht gezogen werden. 
+
+Bevor durch Snowballing weitere möglicherweise relevante Publikationen gesucht werden und die Volltexte der Publikationen analysiert werden, 
+wird eine dritte Suchanfrage formuliert. Diese zielt darauf ab, durch eine noch feinere Fomulierung der Anfrage weitere bisher nicht gefundene 
+Ergebnisse zu identifizieren. 
+
+\begin{quote}
+    Suchanfrage 3 (Stand: 16.07.2024):
+
+    (intitle:''low-code'' quantum computing)
+
+    Erscheinungsdatum der Publikationen: 2014 - 2024
+\end{quote}
+
+Hierfür ergibt sich die in Tabelle \ref{tab:search_3_results} dargestellte Anzahl an Ergebnissen. 
+
+\begin{table}[h!]
+    \centering
+    \caption{Anzahl der Suchergebnisse für Suchanfrage 3}
+    \label{tab:search_3_results}
+    \begin{tabular}{|l|c|}
+    \hline
+    \textbf{Datenbank} & \textbf{Anzahl der Ergebnisse} \\ \hline
+    Google Scholar & 26 \\ \hline
+    IEEE Xplore & 1 \\ \hline
+    ACM Digital Library & 8 \\ \hline
+    \end{tabular}
+\end{table}
+
+Erneut ist die Anzahl an Suchergebnissen geringer geworden. Durchsicht der neuen Ergebnisse ergibt, dass zwar aus Google Scholar 
+keine weiteren Publikationen in die engere Auswahl übernommen werden, jedoch aus der ACM Digital Library 7 sowie aus IEEE Xplore 1 Publikation. 
+Insgesamt ergibt sich somit eine Anzahl von 33 unterschiedlichen Publikationen, die für die weitere Analyse in Betracht gezogen werden. 
+
+Mit den nun identifizierten Publikationen wird der Schritt des Snowballings durchgeführt. Hierbei wird ResearchRabbit eingesetzt, um 
+weitere Publikationen zu identifizieren, die inhaltlich mit den bereits identifizierten Publikationen in Verbindung stehen und somit 
+potenziell relevant sind. Das Tool zeigt dabei die Verbindungen zwischen den Publikationen an und ermöglicht es, die Netzwerke 
+zu älteren und neueren Publikationen zu visualisieren. Es ergeben sich 21 ältere Publikationen, die mit den bereits identifizierten 33 
+Publikationen in Verbindung stehen. Dazu kommen 6 neuere die auf die bereits identifizierten Publikationen verweisen. 
+
+Für diese wird nun ebenfalls der Titel und Abstract durchgesehen, um zu entscheiden, ob sie in die engere Auswahl übernommen werden. 
+Insgesamt lassen sich so 13 weitere Publikationen identifizieren, die für die weitere Analyse in Betracht gezogen werden, was nun nach 
+dem Schritt der Kombination zu 46 Publikationen führt. 
 
 \section{Ergebnisse}
 \begin{itemize}
