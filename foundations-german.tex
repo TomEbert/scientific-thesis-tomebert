@@ -1,19 +1,10 @@
-In diesem Abschnitt werden die theoretischen Grundlagen erläutert, die für das Verständnis des Forschungsgebiets 
+In diesem Abschnitt werden die theoretischen Grundlagen erläutert, die für das Verständnis der Arbeit 
 erforderlich sind. Dazu gehören die Konzepte von Low-Code-Entwicklung, Model-Driven Engineering (MDE) sowie 
 Quantencomputing. Diese Konzepte bilden die Grundlage für die Entwicklung eines Low-Code-Frameworks für Quantencomputing, 
-das hypothetisch die Anwendung von Quantencomputing durch Low-Code-Methoden zugänglicher und benutzerfreundlicher machen könnte.
+das die Anwendung von Quantencomputing durch Low-Code-Methoden zugänglicher und benutzerfreundlicher machen soll.
 
-Low-Code-Entwicklung ermöglicht es, Anwendungen mit minimalem Programmieraufwand zu erstellen, was die 
-Entwicklungszeit verkürzt und die Zugänglichkeit für Citizen-Programmer erhöht \cite{Bock_2021}. Model-Driven Engineering (MDE) 
-nutzt formale Modelle, um den Entwicklungsprozess zu automatisieren und zu standardisiere \cite{gemeinhardt_2021}. Beide Ansätze verfolgen 
-das Ziel, die Komplexität der Softwareentwicklung zu reduzieren. 
+Im Folgenden werden die genannten Konzepte, Low-Code-Entwicklung, Model-Driven Engineering (MDE) und Quantencomputing, näher eingeführt.
 
-Die Anwendung dieser Methoden im Quantencomputing ist Gegenstand dieser Arbeit. Es wird 
-untersucht, ob und wie die Prinzipien der Low-Code-Entwicklung und des MDE auf die 
-Entwicklung von Quantencomputing-Anwendungen übertragen werden können. Ziel ist es, 
-zu erforschen, ob diese Ansätze die Entwicklung von Quantenalgorithmen und -anwendungen effizienter 
-gestalten und einer breiteren Nutzergruppe zugänglich machen können. Dies könnte eine entscheidende 
-Rolle bei der Weiterentwicklung der Quantencomputing-Technologie spielen \cite{Bock_2021} \cite{gemeinhardt_2021}.
 
 \section{Low-Code-Entwicklung und Model-Driven Engineering}
 % \begin{itemize}
@@ -62,53 +53,53 @@ Rolle bei der Weiterentwicklung der Quantencomputing-Technologie spielen \cite{B
 %         \end{itemize}
 % \end{itemize}
 
-\paragraph{Low-Code-Entwicklung}
-Low-Code-Entwicklung ist ein Ansatz, der darauf abzielt, die Entwicklung von Anwendungen
-durch die Automatisierung von Prozessen und die Reduzierung der Notwendigkeit von
-Handcodierung zu vereinfachen. Dieser Ansatz ermöglicht es Fachexperten, Anwendungen
-zu erstellen, ohne umfassende Programmierkenntnisse zu besitzen. Low-Code-Plattformen
-bieten eine Vielzahl von Funktionen, die es ermöglichen, Anwendungen zu erstellen, zu
-testen und zu implementieren. Dazu gehören unter anderem visuelle Entwicklungsumgebungen,
-die es ermöglichen, Anwendungen durch das Ziehen und Ablegen von Komponenten zu erstellen,
-sowie die Integration von Datenbanken und anderen Systemen. Low-Code-Plattformen bieten
-auch Funktionen zur Automatisierung von Prozessen, die es ermöglichen, Anwendungen zu
+% \paragraph{Low-Code-Entwicklung}
+Low-Code-Entwicklung ist ein Ansatz, der darauf abzielt, die Entwicklung von Anwendungen 
+durch die Automatisierung von Prozessen und die Reduzierung der Notwendigkeit von 
+handgeschriebenen Code zu vereinfachen. Dieser Ansatz ermöglicht es Fachexperten, Anwendungen 
+zu erstellen, ohne umfassende Programmierkenntnisse zu besitzen. Low-Code-Plattformen 
+bieten eine Vielzahl von Funktionen, die es ermöglichen, Anwendungen zu erstellen, zu 
+testen und zu implementieren. Dazu gehören unter anderem visuelle Entwicklungsumgebungen, 
+die es ermöglichen, Anwendungen durch das graphische Anordnen und Modellieren von Komponenten zu erstellen, 
+sowie die Integration von Datenbanken und anderen Systemen ermöglichen~\cite{Bock_2021}. 
+Low-Code-Plattformen bieten auch Funktionen zur Automatisierung von Prozessen um Anwendungen zu 
 erstellen, die auf Ereignisse reagieren und sich an veränderte Bedingungen anpassen können.
 
 Ein zentrales Merkmal von Low-Code-Plattformen sind visuelle Entwicklungsumgebungen. Diese Umgebungen ermöglichen 
-es, Anwendungen durch das Ziehen und Ablegen von Komponenten zu erstellen \cite{Bock_2021}. Dadurch wird 
+es, Anwendungen durch graphisches Anordenen und Modellieren zu erstellen~\cite{Bock_2021}. Dadurch wird 
 der Entwicklungsprozess nicht nur beschleunigt, sondern auch intuitiver gestaltet, sodass auch Nutzer ohne 
-tiefgehende Programmierkenntnisse in der Lage sind, komplexe Anwendungen zu entwickeln. Shridhar \cite{Shridhar_2021} betont, 
+tiefgehende Programmierkenntnisse in der Lage sind, komplexe Anwendungen zu entwickeln. Hintergrund ist, dass 
+visuelle Darstellungen für Laien einfacher verständlich sind, als Programmiercode. Shridhar~\cite{Shridhar_2021} betont, 
 dass diese visuellen Entwicklungswerkzeuge die Barriere für die Softwareentwicklung erheblich senken und die 
-Produktivität erhöhen, indem sie die Notwendigkeit von komplexen Programmiersprachen minimieren.
-
-Ein weiteres wichtiges Element ist die Minimierung manuellen Codierens. Low-Code-Plattformen bieten Funktionen, 
-die es ermöglichen, Anwendungen weitgehend ohne traditionellen Code zu entwickeln. Stattdessen werden Prozesse 
-und Logiken durch visuelle Modelle und Konfigurationen abgebildet \cite{Bock_2021}. Dies reduziert nicht nur 
-die Fehleranfälligkeit, sondern erleichtert auch die Wartung und Anpassung von Anwendungen. Alamin und Iqbal \cite{Alamin_2021} 
+Produktivität erhöhen, indem sie die Notwendigkeit, komplexe Programmiersprachen zu benutzen, minimieren.
+Low-Code-Plattformen bieten Funktionen, die es ermöglichen, Anwendungen weitgehend ohne traditionellen, 
+textbasierten Code zu entwickeln. Stattdessen werden Prozesse und Logiken durch visuelle Modelle und 
+Konfigurationen abgebildet~\cite{Bock_2021}. Dies reduziert nicht nur die Fehleranfälligkeit, sondern 
+erleichtert auch die Wartung und Anpassung von Anwendungen. Alamin und Iqbal~\cite{Alamin_2021} 
 führen aus, dass diese Ansätze Entwickler dabei unterstützen, sich auf die Geschäftslogik und die spezifischen Anforderungen 
 der Anwendung zu konzentrieren, anstatt sich mit den Feinheiten der Programmierung auseinanderzusetzen.
 
-Zusätzlich bieten Low-Code-Plattformen Funktionen zur Automatisierung von Prozessen. Diese ermöglichen es, Anwendungen 
-zu erstellen, die auf Ereignisse reagieren und sich an veränderte Bedingungen anpassen können. Durch die Integration 
-von Datenbanken und anderen Systemen wird zudem die Erstellung umfangreicher, datengetriebener Anwendungen 
-vereinfacht \cite{Bock_2021}. Shridhar \cite{Shridhar_2021} und Alamin und Iqbal \cite{Alamin_2021} zeigen auf, dass diese 
-Automatisierungsfunktionen nicht nur die Effizienz steigern, sondern auch die Skalierbarkeit und Flexibilität 
+Low-Code-Plattformen bieten oft Möglichkeiten, Anwendungen zu erstellen, die auf Ereignisse reagieren und sich 
+an veränderte Bedingungen anpassen können. Weiterhin lassen sich meist Datenbanken und andere Systeme integrieren, 
+wodurch zudem die Erstellung umfangreicher, datengetriebener Anwendungen vereinfacht wird~\cite{Bock_2021}. 
+Shridhar~\cite{Shridhar_2021} und Alamin und Iqbal~\cite{Alamin_2021} zeigen auf, dass diese 
+Funktionen nicht nur die Effizienz steigern, sondern auch die Skalierbarkeit und Flexibilität 
 der entwickelten Anwendungen erhöhen.
 
 Ein weiterer Vorteil der Low-Code-Entwicklung ist die Förderung der Zusammenarbeit zwischen verschiedenen 
-Stakeholdern. Die visuelle Natur der Entwicklungsumgebungen ermöglicht es, dass Geschäftsanalysten, Entwickler 
-und Endnutzer enger zusammenarbeiten können, was zu einer besseren Übereinstimmung der entwickelten Software mit 
-den geschäftlichen Anforderungen führt \cite{Shridhar_2021}. Alamin und Iqbal \cite{Alamin_2021} untersuchen in ihrer empirischen 
+Interessensvertretern wie Geschäftsanalysten, Entwickler und Endnutzern. Diese engrere Kollaboration führt zu 
+einer besseren Übereinstimmung der entwickelten Software mit den geschäftlichen Anforderungen~\cite{Shridhar_2021}. 
+Alamin und Iqbal~\cite{Alamin_2021} untersuchen in ihrer empirischen 
 Studie die Herausforderungen, denen sich Entwickler in Low-Code-Umgebungen gegenübersehen, und zeigen auf, dass trotz 
 der Vorteile auch Aspekte wie Plattformabhängigkeit und eingeschränkte Anpassungsfähigkeit bedacht werden müssen.
 
 Insgesamt bietet die Low-Code-Entwicklung viele Vorteile, darunter die beschleunigte Entwicklung, die Reduzierung 
-der Handcodierung und die Verbesserung der Zusammenarbeit. Diese Vorteile machen Low-Code-Plattformen zu einer 
+der Programmierung von Code in Textform und die Verbesserung der Zusammenarbeit. Diese Vorteile machen Low-Code-Plattformen zu einer 
 attraktiven Option für die Entwicklung moderner Anwendungen, insbesondere im Kontext von Quantencomputing, wo 
 komplexe Algorithmen und Datenverarbeitung eine zentrale Rolle spielen könnten.
 
 Die wesentlichen Charakteristika der Low-Code-Entwicklung sowie deren Bewertung als Chance oder Risiko, sind in 
-Tabelle \ref{tab:lowcode_characteristics} zusammengefasst.
+Tabelle~\ref{tab:lowcode_characteristics} zusammengefasst.
 
 \begin{table}[h!]
     \centering
@@ -116,15 +107,15 @@ Tabelle \ref{tab:lowcode_characteristics} zusammengefasst.
     \hline
     \textbf{Charakteristik} & \textbf{Beschreibung} & \textbf{Chance/Risiko} \\
     \hline
-    Visuelle Entwicklungsumgebungen & Anwendungen werden durch Ziehen und Ablegen von Komponenten erstellt. & Chance: Erhöht die Zugänglichkeit und Benutzerfreundlichkeit \\
+    Visuelle Entwicklungsumgebungen & Anwendungen werden durch graphisches Anordenen und Modellieren von Komponenten erstellt. & Chance: Erhöht die Zugänglichkeit und Benutzerfreundlichkeit \\
     \hline
-    Minimierung manuellen Codierens & Prozesse und Logiken werden durch visuelle Modelle und Konfigurationen abgebildet, ohne traditionellen Code. & Chance: Reduziert Fehleranfälligkeit, Risiko: Eingeschränkte Flexibilität \\
+    Minimierung von textbasiertem Code & Prozesse und Logiken werden durch visuelle Modelle und Konfigurationen abgebildet, ohne traditionellen Code. & Chance: Reduziert Fehleranfälligkeit, Risiko: Eingeschränkte Flexibilität \\
     \hline
     Automatisierung von Prozessen & Anwendungen reagieren auf Ereignisse und passen sich an veränderte Bedingungen an. & Chance: Steigert Effizienz und Anpassungsfähigkeit \\
     \hline
     Integration von Datenbanken und Systemen & Einfachere Erstellung datengetriebener Anwendungen durch Integration mit Datenbanken und anderen Systemen. & Chance: Erhöht die Funktionalität und Datenzugänglichkeit \\
     \hline
-    Förderung der Zusammenarbeit & Erleichtert die Zusammenarbeit zwischen Geschäftsanalysten, Entwicklern und Endnutzern. & Chance: Verbessert die Übereinstimmung der Software mit den Geschäftsanforderungen \\
+    Engere Kollaboration verschiedener Interessensvertreter & Erleichtert die Zusammenarbeit zwischen Geschäftsanalysten, Entwicklern und Endnutzern. & Chance: Verbessert die Übereinstimmung der Software mit den Geschäftsanforderungen \\
     \hline
     Schnellere Entwicklungszeiten & Verkürzt die Entwicklungszeiten durch reduzierte Programmieranforderungen. & Chance: Erhöht die Produktivität \\
     \hline
@@ -132,41 +123,41 @@ Tabelle \ref{tab:lowcode_characteristics} zusammengefasst.
     \hline
     Flexibilität und Skalierbarkeit & Erhöht die Flexibilität und Skalierbarkeit der entwickelten Anwendungen. & Chance: Erleichtert Anpassungen und Wachstum \\
     \hline
-    Plattformabhängigkeit & Potenzielle Abhängigkeit von spezifischen Low-Code-Plattformen und deren Limitierungen. & Risiko: Erhöht die Abhängigkeit und mögliche Einschränkungen \\
+    Plattformabhängigkeit & Abhängigkeit von spezifischen Low-Code-Plattformen und deren Limitierungen. & Risiko: Erhöht die Abhängigkeit und mögliche Einschränkungen \\
     \hline
     Wartung und Anpassung & Erleichtert die Wartung und Anpassung von Anwendungen durch visuelle Modelle. & Chance: Verbessert die Wartbarkeit und Anpassungsfähigkeit \\
     \hline
     \end{tabular}
-    \caption{Charakteristika der Low-Code-Entwicklung und deren Bewertung als Chance oder Risiko \cite{Bock_2021, Shridhar_2021, Alamin_2021}}
+    \caption{Charakteristika der Low-Code-Entwicklung und deren Bewertung als Chance oder Risiko~\cite{Bock_2021, Shridhar_2021, Alamin_2021}}
     \label{tab:lowcode_characteristics}
 \end{table}
-    
-\paragraph{Model-Driven Engineering}
-Model-Driven Engineering (MDE) ist ein Ansatz zur Softwareentwicklung, der darauf abzielt, die Entwicklung von 
-Anwendungen durch die Verwendung von Modellen zu vereinfachen. MDE ermöglicht es Entwicklern, Anwendungen zu erstellen, 
-indem sie Modelle verwenden, die eine abstrakte Darstellung der Anwendung und ihrer Funktionalität darstellen. Diese 
-Modelle können dann verwendet werden, um den Code für die Anwendung automatisch zu generieren. MDE bietet eine Reihe 
-von Vorteilen, darunter die Möglichkeit, Anwendungen schneller zu entwickeln, die Wiederverwendung von Modellen und 
-die Möglichkeit, die Qualität der Anwendungen zu verbessern.
+
+Model-Driven Engineering (MDE) ist ein Ansatz zur Softwareentwicklung, bei dem Modelle als zentrale und treibende 
+Elemente des Entwicklungsprozesses fungieren. In MDE dienen diese Modelle nicht nur zur Unterstützung, sondern 
+bilden die Grundlage für die Generierung des Quellcodes. Dieser Ansatz ermöglicht es, durch formale Modelle 
+eine abstrakte und detaillierte Darstellung der Anwendung und ihrer Funktionalität zu schaffen. Diese Modelle 
+werden anschließend zur automatischen Codegenerierung verwendet, was zu einer beschleunigten Entwicklung, einer 
+erhöhten Wiederverwendbarkeit und einer verbesserten Qualität der Anwendungen führt~\cite{Selic_2003}.
 
 Ein wesentliches Merkmal von MDE ist die Nutzung formaler Modelle zur Softwareentwicklung. Diese Modelle bieten 
 eine präzise und verständliche Beschreibung der Struktur und des Verhaltens der zu entwickelnden 
-Software \cite{Schmidt_2006}. Durch die Abstraktion von technischen Details ermöglichen formale Modelle 
+Software~\cite{Schmidt_2006}. Durch die Abstraktion von technischen Details ermöglichen formale Modelle 
 eine klare Kommunikation zwischen den verschiedenen Stakeholdern im Entwicklungsprozess und tragen dazu bei, 
 Missverständnisse zu vermeiden. Formale Modelle können in verschiedenen Formen vorliegen, darunter UML-Diagramme, 
-ER-Diagramme und BPMN-Modelle, die jeweils spezifische Aspekte der Software und ihrer Prozesse abbilden \cite{Selic_2003}.
+ER-Diagramme und BPMN-Modelle, die jeweils spezifische Aspekte der Software und ihrer Prozesse abbilden~\cite{Selic_2003}.
 
 Ein weiteres zentrales Element von MDE ist die Transformation von Modellen in Code. Dieser Prozess, der als 
 Model-to-Code-Transformation bezeichnet wird, ermöglicht es, aus den erstellten Modellen automatisch lauffähigen 
-Code zu generieren \cite{brambilla2017model}. Dies führt nicht nur zu einer Beschleunigung der Entwicklung, sondern 
-reduziert auch die Fehleranfälligkeit, da manuelle Codierarbeiten minimiert werden. Durch die Automatisierung der 
+Code zu generieren~\cite{brambilla2017model}. Dies führt nicht nur zu einer Beschleunigung der Entwicklung, sondern 
+reduziert auch die Fehleranfälligkeit, da die Notwendigkeit von textbasiertem Code minimiert wird. Durch die Automatisierung der 
 Code-Generierung wird zudem die Konsistenz zwischen den Modellen und dem finalen Code sichergestellt. Verschiedene 
-Werkzeuge und Plattformen wie Eclipse Modeling Framework (EMF) und Acceleo unterstützen diesen Transformationsprozess 
-und ermöglichen eine nahtlose Integration in den Entwicklungsworkflow \cite{steinberg2008emf}.
+Werkzeuge und Plattformen wie das Eclipse Modeling Framework (EMF)~\cite{eclipseEclipse} und 
+Acceleo~\cite{eclipseEclipseAcceleo} unterstützen diesen Transformationsprozess 
+und ermöglichen eine nahtlose Integration in den Entwicklungsworkflow~\cite{steinberg2008emf}.
 
 MDE fördert außerdem die Wiederverwendbarkeit von Modellen und Komponenten. Durch die Definition wiederverwendbarer 
 Modellbausteine können Entwickler effizienter arbeiten und die Qualität der Anwendungen erhöhen. Dies ermöglicht es, 
-bewährte Lösungen und Muster zu nutzen und so den Entwicklungsaufwand zu reduzieren \cite{France_2007}. Zusätzlich 
+bewährte Lösungen und Muster zu nutzen und so den Entwicklungsaufwand zu reduzieren~\cite{France_2007}. Zusätzlich 
 trägt MDE zur Verbesserung der Wartbarkeit und Erweiterbarkeit von Software bei, da Änderungen am Modell automatisch 
 im generierten Code reflektiert werden können.
 
@@ -177,12 +168,12 @@ die Flexibilität einschränken kann. Die Qualität des automatisch generierten 
 Performance-Problemen und Fehlern führen. Zudem erfordert MDE spezifische Schulungen und Wissen, was zusätzliche
 Kosten und Aufwand bedeutet. Herausforderungen bestehen auch in der Skalierbarkeit und Integration von MDE-Lösungen 
 in bestehende Systeme sowie in der Modell-zu-Code-Abstraktionslücke, die dazu führen kann, dass nicht alle Details 
-und Optimierungen im generierten Code abgebildet werden.
+und Optimierungen im generierten Code abgebildet werden~\cite{france2007model}.
 
 Zusammenfassend lässt sich sagen, dass MDE eine umfassende Methodik zur Softwareentwicklung bietet, die durch 
 die Nutzung formaler Modelle und die Automatisierung der Code-Generierung sowohl die Effizienz als auch die 
 Qualität der entwickelten Anwendungen steigern kann. Die wesentlichen Aspekte und Vorteile von MDE sind 
-in Tabelle \ref{tab:mde_characteristics} zusammengefasst. Diese Übersicht bietet eine klare Struktur zur 
+in Tabelle~\ref{tab:mde_characteristics} zusammengefasst. Diese Übersicht bietet eine klare Struktur zur 
 Einordnung der MDE-Methoden, indem sie die verschiedenen Merkmale, deren Beschreibungen und die daraus 
 resultierenden Vorteile und Risiken aufzeigt.
 
@@ -213,11 +204,11 @@ resultierenden Vorteile und Risiken aufzeigt.
     Modell-zu-Code-Abstraktionslücke & Gefahr, dass Modelle nicht alle Details und Nuancen des Codes abbilden. & Risiko: Fehlen von Details und Optimierungen im generierten Code \\
     \hline
     \end{tabular}
-    \caption{Charakteristika des Model-Driven Engineering (MDE), deren Chancen und Risiken \cite{Schmidt_2006, brambilla2017model, Selic_2003, steinberg2008emf, France_2007}}
+    \caption{Charakteristika des Model-Driven Engineering (MDE), deren Chancen und Risiken~\cite{Schmidt_2006, brambilla2017model, Selic_2003, steinberg2008emf, France_2007}}
     \label{tab:mde_characteristics}
 \end{table}
 
-\paragraph{Unterschiede zwischen Low-Code und MDE}
+\subsubsection{Unterschiede zwischen Low-Code und MDE}
 Low-Code-Entwicklung und Model-Driven Engineering (MDE) sind zwei Ansätze zur Vereinfachung und Beschleunigung der 
 Softwareentwicklung. Obwohl sie ähnliche Ziele verfolgen, unterscheiden sie sich in ihrer Fokussierung, Zielgruppe und Methodik.
 
@@ -229,7 +220,7 @@ Nicht-Programmierern ermöglicht, aktiv an der Softwareentwicklung teilzunehmen.
 liegt in der schnellen und kosteneffizienten Erstellung von Anwendungen, die auf spezifische Geschäftsanforderungen 
 zugeschnitten sind. Diese Plattformen sind oft cloud-basiert und bieten integrierte Entwicklungsumgebungen, die den 
 gesamten Softwarelebenszyklus unterstützen, von der Anforderungserhebung über das Design bis hin zur Implementierung 
-und Wartung \cite{Cabot_2020}.
+und Wartung~\cite{Cabot_2020}.
 
 Im Gegensatz dazu konzentriert sich MDE auf die formale Modellierung und Transformationen. Es richtet sich in erster 
 Linie an professionelle Entwickler und Ingenieure, die komplexe technische Projekte realisieren. MDE verwendet formale 
@@ -238,7 +229,7 @@ Codegenerierung. Diese Methodik ist besonders nützlich in großen, komplexen Pr
 Konsistenz erforderlich sind. MDE unterstützt die Erstellung detaillierter und präziser Modelle, die als Grundlage für 
 die automatische Generierung von Code dienen, was zu einer höheren Qualität und Konsistenz der Software führt. Werkzeuge 
 wie das Eclipse Modeling Framework (EMF) und Acceleo sind Beispiele für MDE-Plattformen, die die Modellierung und die 
-Transformation von Modellen in lauffähigen Code unterstützen \cite{di2022low}.
+Transformation von Modellen in lauffähigen Code unterstützen~\cite{di2022low}.
 
 In dieser Arbeit werden die Unterschiede zwischen Low-Code-Entwicklung und MDE zwar kurz behandelt, jedoch sind sie im Kontext 
 der vorliegenden Forschungsarbeit von geringerer Relevanz. Der Hauptfokus liegt auf den gemeinsamen Prinzipien und Nutzen 
@@ -294,7 +285,7 @@ beider Ansätze kombinieren. Dies kann dazu beitragen, die Hürden für die Nutz
 von Anwendungen in diesem Bereich zu beschleunigen. Durch die Nutzung der gemeinsamen Prinzipien von Abstraktion und Automatisierung 
 sowie der Reduzierung der Komplexität kann die Softwareentwicklung effizienter und produktiver gestaltet werden.
 
-Zusammenfassend ist in der Tabelle \ref{tab:common_characteristics} eine Übersicht über die gemeinsamen Charakteristika die 
+Zusammenfassend ist in der Tabelle~\ref{tab:common_characteristics} eine Übersicht über die gemeinsamen Charakteristika die 
 in der vorliegenden Arbeit herangezogen werden, um die Vorteile und Potenziale von Low-Code-Entwicklung 
 für die Entwicklung von Quantencomputing-Anwendungen zu verdeutlichen. Diese Charakteristika bilden die Grundlage für die 
 weitere Untersuchung der Anwendung von Low-Code-Entwicklung im Bereich des Quantencomputings. 
@@ -326,19 +317,19 @@ zur gemeinschaftlichen Entwicklung und kontinuierlichen Verbesserung durch eine 
 Diese kollaborative Umgebung fördert Innovation und ermöglicht eine schnelle Identifizierung und Behebung 
 von Fehlern. Zudem sind Open Source Lösungen in der Regel kostengünstiger, da sie keine Lizenzgebühren 
 erfordern, was insbesondere für Forschungsprojekte und kleinere Unternehmen von Vorteil 
-ist \cite{raymond2010cathedral}. Open Source Plattformen wie GitHub und GitLab bieten umfangreiche Werkzeuge und 
-Ressourcen, die die Entwicklung und Verbreitung von Softwareprojekten erleichtern \cite{fitzgerald2006transformation}.
+ist~\cite{raymond2010cathedral}. Open Source Plattformen wie GitHub und GitLab bieten umfangreiche Werkzeuge und 
+Ressourcen, die die Entwicklung und Verbreitung von Softwareprojekten erleichtern~\cite{fitzgerald2006transformation}.
 
 Darüber hinaus ermöglichen Open Source Lösungen eine hohe Transparenz und Sicherheit. Der offene Zugang 
 zum Quellcode erlaubt es den Nutzern, den Code zu überprüfen, anzupassen und an spezifische Bedürfnisse 
 anzupassen. Dies erhöht nicht nur die Sicherheit durch unabhängige Überprüfungen, sondern bietet auch 
 die Flexibilität, individuelle Anpassungen vorzunehmen, die in proprietären Systemen oft nicht 
-möglich sind \cite{von2006promise}.
+möglich sind~\cite{von2006promise}.
 
 Allerdings gibt es auch Limitationen. Open Source Projekte können unter mangelnder Unterstützung und 
 Dokumentation leiden, was die Lernkurve für neue Nutzer steiler macht. Zudem ist die Integration von 
 Open Source Komponenten in bestehende Systeme oft komplex und erfordert spezifisches technisches 
-Know-how \cite{chesbrough2006open}. Während die breite Verfügbarkeit von Open Source Projekten eine große 
+Know-how~\cite{chesbrough2006open}. Während die breite Verfügbarkeit von Open Source Projekten eine große 
 Auswahl bietet, kann dies auch zu einer Fragmentierung führen, bei der es schwierig ist, eine konsistente 
 und stabile Lösung zu finden und zu implementieren.
 
@@ -349,7 +340,7 @@ wird. Dies ist besonders relevant in einem sich schnell entwickelnden und komple
 Quantencomputing, wo der Zugang zu neuesten Entwicklungen und die Fähigkeit zur schnellen Anpassung 
 entscheidend sind. Die Nutzung von Open Source Lösungen kann daher nicht nur die Entwicklung 
 beschleunigen, sondern auch die Zusammenarbeit und den Wissensaustausch zwischen verschiedenen 
-Disziplinen und Institutionen fördern \cite{west2006challenges}.
+Disziplinen und Institutionen fördern~\cite{west2006challenges}.
 
 % \begin{itemize}
 %     \item Definition und Bedeutung
@@ -502,31 +493,30 @@ die sie von der klassischen Physik unterscheiden. Eines dieser Prinzipien ist di
 Quantenobjekt, wie ein Qubit, sich gleichzeitig in mehreren Zuständen befinden kann. Während ein klassisches Bit 
 entweder 0 oder 1 sein kann, kann ein Qubit in einer Überlagerung dieser Zustände sein, mathematisch dargestellt 
 als \( \alpha|0\rangle + \beta|1\rangle \), wobei \( \alpha \) und \( \beta \) komplexe Zahlen sind, die die 
-Wahrscheinlichkeitsamplituden repräsentieren \cite{nielsen2010quantum}.
+Wahrscheinlichkeitsamplituden repräsentieren~\cite{nielsen2010quantum}.
 
 Ein weiteres zentrales Prinzip der Quantenmechanik ist die Verschränkung, die eine starke Korrelation zwischen den 
 Zuständen von zwei oder mehr Quantenobjekten beschreibt. Wenn Qubits verschränkt sind, wird der Zustand eines Qubits 
 instantan durch den Zustand des anderen beeinflusst, unabhängig von der Entfernung zwischen ihnen. Diese Eigenschaft 
-ermöglicht es, Informationen auf eine Weise zu verarbeiten, die in der klassischen Physik nicht möglich ist 
-\cite{einstein1935can}.
+ermöglicht es, Informationen auf eine Weise zu verarbeiten, die in der klassischen Physik nicht möglich ist~\cite{einstein1935can}.
 
 Quanteninterferenz tritt auf, wenn die Wahrscheinlichkeitsamplituden von Quantenzuständen konstruktiv oder 
 destruktiv interferieren. Dies bedeutet, dass sich die Wahrscheinlichkeiten bestimmter Ergebnisse verstärken oder 
 abschwächen können. Dieses Phänomen ermöglicht es Quantenalgorithmen, durch gezielte Interferenzen effizientere 
-Berechnungen durchzuführen als klassische Algorithmen \cite{feynman2018simulating}.
+Berechnungen durchzuführen als klassische Algorithmen~\cite{feynman2018simulating}.
 
 Die Quantenmechanik unterscheidet sich in mehreren wesentlichen Punkten von der klassischen Physik. In der 
 klassischen Physik sind die Zustände von Systemen deterministisch und können mit absoluter Genauigkeit 
 vorhergesagt werden. In der Quantenmechanik sind die Zustände von Systemen probabilistisch, und es kann 
-nur die Wahrscheinlichkeit eines bestimmten Zustands vorhergesagt werden \cite{griffiths2018introduction}. 
+nur die Wahrscheinlichkeit eines bestimmten Zustands vorhergesagt werden~\cite{griffiths2018introduction}. 
 Ein weiteres grundlegendes Konzept ist die Heisenbergsche Unschärferelation, die besagt, dass bestimmte Paare 
 physikalischer Größen, wie Ort und Impuls, nicht gleichzeitig mit beliebiger Genauigkeit bestimmt werden können. 
 Dies steht im Gegensatz zur klassischen Physik, wo solche Größen unabhängig voneinander genau gemessen werden 
-können \cite{heisenberg1927anschaulichen}.
+können~\cite{heisenberg1927anschaulichen}.
 
 Quantenmechanische Effekte wie Verschränkung führen zu Nicht-Lokalität, wobei die Zustände von verschränkten 
 Teilchen unabhängig von ihrer Entfernung instantan korreliert sind. In der klassischen Physik gibt es keine 
-Entsprechung für diese Art der instantanen Wechselwirkung \cite{aspect1982experimental}. Diese fundamentalen Unterschiede 
+Entsprechung für diese Art der instantanen Wechselwirkung~\cite{aspect1982experimental}. Diese fundamentalen Unterschiede 
 machen die Quantenmechanik zu einem faszinierenden und herausfordernden Bereich, der das Potenzial hat, 
 die Art und Weise, wie wir Informationen verarbeiten und verstehen, grundlegend zu verändern.
 
@@ -548,18 +538,18 @@ Diese Gatter sind die Bausteine, die es ermöglichen, Quanteninformationen zu ve
 zu klassischen Logikgattern, die binäre Operationen auf Bits durchführen, operieren Quantenlogikgatter 
 auf Qubits und nutzen deren Fähigkeit zur Superposition und Verschränkung. Ein einzelnes Qubit kann durch 
 verschiedene Gatter in eine Superposition gebracht oder mit anderen Qubits verschränkt werden, was die 
-Grundlage für die parallele Verarbeitung von Informationen bildet \cite{nielsen2010quantum}.
+Grundlage für die parallele Verarbeitung von Informationen bildet~\cite{nielsen2010quantum}.
 
 Zu den grundlegenden Quantenlogikgattern gehören das Hadamard-Gatter, die Pauli-Gatter und das CNOT-Gatter. 
 Das Hadamard-Gatter (H) transformiert ein Qubit von einem Basiszustand in eine Superposition beider 
 Basiszustände, mathematisch ausgedrückt als \( H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \) 
 und \( H|1\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle) \). Diese Operation ist entscheidend, um 
-die quantenmechanische Eigenschaft der Superposition zu nutzen \cite{griffiths2018introduction}.
+die quantenmechanische Eigenschaft der Superposition zu nutzen~\cite{griffiths2018introduction}.
 
 Die Pauli-Gatter (X, Y und Z) entsprechen den klassischen NOT-, Y- und Z-Operationen und ändern den 
 Zustand eines Qubits entlang der X-, Y- oder Z-Achse auf der Bloch-Kugel. Zum Beispiel invertiert 
 das X-Gatter (auch als Quanten-NOT-Gatter bekannt) den Zustand eines Qubits, 
-sodass \( X|0\rangle = |1\rangle \) und \( X|1\rangle = |0\rangle \) \cite{nielsen2010quantum}.
+sodass \( X|0\rangle = |1\rangle \) und \( X|1\rangle = |0\rangle \)~\cite{nielsen2010quantum}.
 
 Das CNOT-Gatter (kontrolliertes NOT) ist ein zweiqubitiges Gatter, das eine Verschränkung 
 zwischen zwei Qubits erzeugt. Es wirkt auf ein Kontrollqubit und ein Zielqubit. Wenn das Kontrollqubit 
@@ -567,20 +557,20 @@ im Zustand \(|1\rangle\) ist, invertiert das CNOT-Gatter den Zustand des Zielqub
 der Zustand des Zielqubits unverändert. 
 Mathematisch wird dies als \( CNOT|00\rangle = |00\rangle \), \( CNOT|01\rangle = |01\rangle \), \( CNOT|10\rangle = |11\rangle \) 
 und \( CNOT|11\rangle = |10\rangle \) dargestellt. Dieses Gatter ist essenziell für die Implementierung von 
-Quantenalgorithmen, die Verschränkungen nutzen \cite{feynman2018simulating}.
+Quantenalgorithmen, die Verschränkungen nutzen~\cite{feynman2018simulating}.
 
 Die Zusammensetzung von Quantenoperationen in einem Quantenschaltkreis erfolgt durch die sequentielle Anwendung 
 dieser Gatter auf die Qubits. Die Reihenfolge und Kombination der Gatter bestimmen die durchgeführte 
 Quantenoperation und letztendlich das Ergebnis der Berechnung. Ein Quantenalgorithmus wird durch einen 
 spezifischen Schaltkreis dargestellt, der die notwendigen Schritte zur Lösung eines Problems definiert. 
 Zum Beispiel besteht der Shor-Algorithmus zur Faktorisierung großer Zahlen aus einer komplexen Sequenz von 
-Quantenoperationen, die Superposition und Verschränkung nutzen, um effizienter zu sein als klassische Algorithmen \cite{shor1999polynomial}.
+Quantenoperationen, die Superposition und Verschränkung nutzen, um effizienter zu sein als klassische Algorithmen~\cite{shor1999polynomial}.
 
 Die Entwicklung und Implementierung von Quantenschaltkreisen stellt jedoch erhebliche Herausforderungen 
 dar. Einerseits erfordert die präzise Steuerung und Manipulation von Qubits spezialisierte Kenntnisse und 
 technologische Fähigkeiten, die über die klassischen Programmierkenntnisse hinausgehen. Andererseits sind 
 Quantenoperationen anfällig für Fehler und Dekohärenz, was die Zuverlässigkeit und Genauigkeit der 
-Berechnungen beeinträchtigen kann \cite{preskill2018quantum}.
+Berechnungen beeinträchtigen kann~\cite{preskill2018quantum}.
 
 Für die Entwicklung von Low-Code-Tools im Quantencomputing bedeutet dies, dass diese Werkzeuge eine 
 benutzerfreundliche Oberfläche bieten müssen, die Entwicklern ermöglicht, komplexe Quantenschaltungen 
@@ -593,33 +583,33 @@ Quantenalgorithmen erleichtern.
 Zu den bedeutendsten Quantenalgorithmen zählen der Shor-Algorithmus, der Grover-Algorithmus und der 
 Deutsch-Jozsa-Algorithmus. Der Shor-Algorithmus, der zur effizienten Faktorisierung großer Zahlen 
 verwendet wird, hat wesentliche Implikationen für die Kryptographie, da viele Verschlüsselungssysteme 
-auf der Schwierigkeit der Faktorisierung basieren \cite{shor1999polynomial}. Der Grover-Algorithmus bietet eine 
+auf der Schwierigkeit der Faktorisierung basieren~\cite{shor1999polynomial}. Der Grover-Algorithmus bietet eine 
 quadratische Beschleunigung bei der Suche in unsortierten Datenbanken und kann in Anwendungen mit 
-großen Datenmengen von Vorteil sein \cite{grover1996fast}. Der Deutsch-Jozsa-Algorithmus ermöglicht es, die 
+großen Datenmengen von Vorteil sein~\cite{grover1996fast}. Der Deutsch-Jozsa-Algorithmus ermöglicht es, die 
 Konstanz einer Funktion exponentiell schneller zu bestimmen als klassische Methoden, und dient als 
-Demonstration der Leistungsfähigkeit von Quantenalgorithmen \cite{deutsch1992rapid}.
+Demonstration der Leistungsfähigkeit von Quantenalgorithmen~\cite{deutsch1992rapid}.
 
 Quantenalgorithmen finden Anwendung in verschiedenen Bereichen. In der Kryptographie ermöglicht die 
 Quantenkryptographie die Entwicklung von Kommunikationsprotokollen, die auf den Prinzipien der 
-Quantenmechanik basieren und gegenüber Abhörversuchen resistent sind \cite{bennett2014quantum}. 
+Quantenmechanik basieren und gegenüber Abhörversuchen resistent sind~\cite{bennett2014quantum}. 
 Optimierungsprobleme, wie das Travelling Salesman Problem, können durch Quantenalgorithmen effizienter 
-gelöst werden, was in der Logistik und anderen Industriezweigen von Nutzen ist \cite{farhi2000quantum}. 
+gelöst werden, was in der Logistik und anderen Industriezweigen von Nutzen ist~\cite{farhi2000quantum}. 
 Zudem ermöglichen Quantenalgorithmen die Simulation von Quantenmechanischen Systemen, was Fortschritte 
-in den Materialwissenschaften und der Chemie unterstützen kann \cite{aspuru2005simulated}.
+in den Materialwissenschaften und der Chemie unterstützen kann~\cite{aspuru2005simulated}.
 
 Die Entwicklung und Implementierung von Quantenalgorithmen stehen jedoch vor signifikanten technischen 
 Herausforderungen. Dekohärenz und hohe Fehlerraten beeinträchtigen die Zuverlässigkeit von Quantenoperationen, 
-was die Notwendigkeit von Fehlerkorrekturmechanismen verdeutlicht \cite{preskill2018quantum}. Diese Mechanismen sind 
+was die Notwendigkeit von Fehlerkorrekturmechanismen verdeutlicht~\cite{preskill2018quantum}. Diese Mechanismen sind 
 komplex und erfordern zusätzliche Ressourcen, um zuverlässige Quantenberechnungen zu gewährleisten. 
 Darüber hinaus stellt die Skalierbarkeit von Quantencomputern ein ungelöstes Problem dar, da die Anzahl 
-der benötigten Qubits und die Komplexität der Quantenoperationen exponentiell zunehmen \cite{monroe2013scaling}.
+der benötigten Qubits und die Komplexität der Quantenoperationen exponentiell zunehmen~\cite{monroe2013scaling}.
 
 Trotz dieser Herausforderungen weist Quantencomputing erhebliche Potenziale und Zukunftsperspektiven auf. 
 Theoretisch können Quantencomputer bestimmte Berechnungen exponentiell schneller durchführen als klassische 
-Computer \cite{nielsen2010quantum}. Mögliche Fortschritte werden in verschiedenen Forschungs- und 
+Computer~\cite{nielsen2010quantum}. Mögliche Fortschritte werden in verschiedenen Forschungs- und 
 Anwendungsgebieten erwartet, einschließlich der Kryptographie, der Optimierung und der 
-Materialwissenschaften \cite{arute2019quantum}. Prognosen zur Entwicklung der Quantencomputing-Technologie 
-deuten darauf hin, dass in den kommenden Jahrzehnten signifikante Fortschritte zu erwarten sind \cite{ladd2010quantum}.
+Materialwissenschaften~\cite{arute2019quantum}. Prognosen zur Entwicklung der Quantencomputing-Technologie 
+deuten darauf hin, dass in den kommenden Jahrzehnten signifikante Fortschritte zu erwarten sind~\cite{ladd2010quantum}.
 
 Die Einführung von Low-Code-Ansätzen im Quantencomputing könnte potenziell mehrere bedeutende Vorteile bieten. 
 Ein wesentlicher Vorteil ist die Erleichterung der Entwicklung von Quantenalgorithmen. Durch die 
@@ -628,20 +618,20 @@ quantenmechanischen Prinzipien abstrahieren, können Low-Code-Tools es Entwickle
 Quantenalgorithmen effizienter zu erstellen und zu testen. Dies könnte insbesondere für Entwickler nützlich 
 ein, die über begrenzte Kenntnisse in der Quantenmechanik verfügen, da sie sich auf die Logik und 
 Funktionalität ihrer Algorithmen konzentrieren können, ohne tief in die physikalischen Details 
-eintauchen zu müssen \cite{Cabot_2020}.
+eintauchen zu müssen~\cite{Cabot_2020}.
 
 Ein weiterer Vorteil ist die Verbesserung der Zugänglichkeit für nicht-technische Nutzer. Low-Code-Tools 
 könnten die Barrieren senken, die viele Fachleute ohne tiefgehende technische Kenntnisse daran hindern, 
 Quantencomputing zu nutzen. Durch intuitive Schnittstellen und vorgefertigte Module könnten auch Nutzer 
 aus anderen Disziplinen, wie Wirtschaft, Biologie oder Chemie, Quantenalgorithmen entwickeln und 
-anwenden, um spezifische Probleme in ihren Bereichen zu lösen \cite{di2022low}. Dies könnte zu 
+anwenden, um spezifische Probleme in ihren Bereichen zu lösen~\cite{di2022low}. Dies könnte zu 
 einer breiteren Akzeptanz und Nutzung von Quantencomputing führen und neue innovative Anwendungen ermöglichen.
 
 Darüber hinaus könnten Low-Code-Ansätze die Innovation und Kollaboration fördern. Durch die 
 Vereinfachung des Entwicklungsprozesses und die Verbesserung der Zugänglichkeit können mehr Fachleute 
 aus verschiedenen Disziplinen an der Entwicklung von Quantenanwendungen teilnehmen. Dies könnte zu 
 interdisziplinären Kollaborationen führen, die innovative Lösungen und neue Anwendungsgebiete für 
-Quantencomputing hervorbringen \cite{di2022low}.
+Quantencomputing hervorbringen~\cite{di2022low}.
 
 Dennoch gibt es Herausforderungen und Limitationen bei der Nutzung von Low-Code-Entwicklung und 
 Model-Driven Engineering (MDE) im Quantencomputing. Eine der größten technischen Herausforderungen 
@@ -649,16 +639,16 @@ besteht in der Integration dieser Tools in bestehende Quantencomputing-Plattform
 der Quantenhardware und -software erfordert spezialisierte Schnittstellen und Protokolle, um eine 
 nahtlose Integration zu gewährleisten. Darüber hinaus müssen diese Tools skalierbar sein und die 
 Performanceanforderungen großer Quantenoperationen bewältigen können, was eine erhebliche technische 
-Herausforderung darstellt \cite{monroe2013scaling}.
+Herausforderung darstellt~\cite{monroe2013scaling}.
 
 Mögliche Limitationen der Low-Code-Ansätze umfassen begrenzte Anpassungsmöglichkeiten und die 
 Abhängigkeit von spezifischen Plattformen. Low-Code-Tools bieten in der Regel vordefinierte 
 Module und Bausteine, die zwar die Entwicklung erleichtern, aber möglicherweise nicht die 
 Flexibilität bieten, die für spezialisierte oder fortgeschrittene Quantenanwendungen erforderlich 
 ist. Zudem könnten diese Tools von den spezifischen Technologien und Plattformen abhängen, auf denen 
-sie entwickelt wurden, was ihre Portabilität und Interoperabilität einschränken könnte \cite{nielsen2010quantum}.
+sie entwickelt wurden, was ihre Portabilität und Interoperabilität einschränken könnte~\cite{nielsen2010quantum}.
 
-Die Tabelle \ref{tab:lowcode_potentials_challenges} fasst die potenziellen Vorteile der 
+Die Tabelle~\ref{tab:lowcode_potentials_challenges} fasst die potenziellen Vorteile der 
 Low-Code-Entwicklung im Quantencomputing sowie die damit verbundenen Herausforderungen und Hindernisse 
 zusammen, um einen umfassenden Überblick über die Chancen und die technischen Hürden zu bieten, die 
 bei der Implementierung solcher Ansätze berücksichtigt werden müssen.

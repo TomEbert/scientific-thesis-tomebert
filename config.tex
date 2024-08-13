@@ -709,7 +709,7 @@
   bibliography = {Literaturverzeichnis}
 }
 
-% EN: enable hyperlinked author names when using \citeauthor
+% EN: enable hyperlinked author names when using~\citeauthor
 %     source: http://tex.stackexchange.com/a/75916/9075
 \DeclareCiteCommand{\citeauthor}
 {\boolfalse{citetracker}%
@@ -724,10 +724,10 @@
 
 % EN: natbib compatibility
 %\newcommand{\citep}[1]{\cite{#1}}
-%\newcommand{\citet}[1]{\citeauthor{#1} \cite{#1}}
+%\newcommand{\citet}[1]{\citeauthor{#1}~\cite{#1}}
 % EN: Beginning of sentence - analogous to cleveref - important for names such as "zur Muehlen"
 %\newcommand{\Citep}[1]{\cite{#1}}
-%\newcommand{\Citet}[1]{\Citeauthor{#1} \cite{#1}}
+%\newcommand{\Citet}[1]{\Citeauthor{#1}~\cite{#1}}
 
 % DE: Blindtext. Paket "blindtext" ist fortgeschritterner als "lipsum" und kann auch Mathematik im Text (http://texblog.org/2011/02/26/generating-dummy-textblindtext-with-latex-for-testing/)
 %     kantlipsum (https://www.ctan.org/tex-archive/macros/latex/contrib/kantlipsum) ist auch ganz nett, aber eben auch keine Mathematik
