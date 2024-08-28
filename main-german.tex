@@ -125,21 +125,21 @@ enddate={30.\ August 2024}  % English: January 5, 2014; ISO: 2014-01-05
 \listoftables
 
 %Wird nur bei Verwendung von der lstlisting-Umgebung mit dem "caption"-Parameter benoetigt
-%\lstlistoflistings
+\lstlistoflistings
 %ansonsten:
-\ifdeutsch
-  \listof{Listing}{Verzeichnis der Listings}
-\else
-  \listof{Listing}{List of Listings}
-\fi
+% \ifdeutsch
+%   \listof{Listing}{Verzeichnis der Listings}
+% \else
+%   \listof{Listing}{List of Listings}
+% \fi
 
 %mittels \newfloat wurde die Algorithmus-Gleitumgebung definiert.
 %Mit folgendem Befehl werden alle floats dieses Typs ausgegeben
-\ifdeutsch
-  \listof{Algorithmus}{Verzeichnis der Algorithmen}
-\else
-  \listof{Algorithmus}{List of Algorithms}
-\fi
+% \ifdeutsch
+%   \listof{Algorithmus}{Verzeichnis der Algorithmen}
+% \else
+%   \listof{Algorithmus}{List of Algorithms}
+% \fi
 %\listofalgorithms %Ist nur für Algorithmen, die mittels \begin{algorithm} umschlossen werden, nötig
 
 % Abkürzungsverzeichnis
@@ -245,16 +245,19 @@ enddate={30.\ August 2024}  % English: January 5, 2014; ISO: 2014-01-05
 \label{chap:zusfas}
 
 \input{conclusion-german.tex}
-Hier bitte einen kurzen Durchgang durch die Arbeit.
 
 \printbibliography
 
 Alle URLs wurden zuletzt am 18.\,02.\,2024 geprüft.
 
-%\renewcommand{\appendixtocname}{Anhang}
-%\renewcommand{\appendixname}{Anhang}
-%\renewcommand{\appendixpagename}{Anhang}
+\renewcommand{\appendixtocname}{Anhang}
+\renewcommand{\appendixname}{Anhang}
+\renewcommand{\appendixpagename}{Anhang}
 \appendix
+\appendixpage
+\addappheadtotoc
+\section*{Anhang}
+\input{overview-low-code-tools-german.tex}
 % \input{latexhints-german}
 
 \pagestyle{empty}
