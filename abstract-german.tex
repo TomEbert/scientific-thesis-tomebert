@@ -1,32 +1,74 @@
-Quantencomputing steht an der Schwelle zu einer paradigmatischen
-Verschiebung in der Informationsverarbeitung, mit dem Potenzial,
-Problemlösungen zu ermöglichen, die über die Grenzen klassischer
-Rechenarchitekturen hinausgehen~\cite{Shor1999}. Trotz des theoretischen und
-praktischen Potenzials des Quantencomputings bleibt der Zugang zu dieser
-Technologie aufgrund der inhärenten Komplexität von Quantenalgorithmen
-und der erforderlichen tiefgreifenden Kenntnisse in Quantenmechanik und
--informatik limitiert~\cite{Chitransh2022}. So unterscheidet sich die Programmierung
-von Quantencomputern stark von der im klassischen Bereich~\cite{Rieffel2011}.
+% Quantencomputing steht an der Schwelle zu einer paradigmatischen
+% Verschiebung in der Informationsverarbeitung, mit dem Potenzial,
+% Problemlösungen zu ermöglichen, die über die Grenzen klassischer
+% Rechenarchitekturen hinausgehen~\cite{Shor1999}. Trotz des theoretischen und
+% praktischen Potenzials des Quantencomputings bleibt der Zugang zu dieser
+% Technologie aufgrund der inhärenten Komplexität von Quantenalgorithmen
+% und der erforderlichen tiefgreifenden Kenntnisse in Quantenmechanik und
+% -informatik limitiert~\cite{Chitransh2022}. So unterscheidet sich die Programmierung
+% von Quantencomputern stark von der im klassischen Bereich~\cite{Rieffel2011}.
 
-Im Klassischen bieten Low-Code-Entwicklungsumgebungen einen Ansatz, um
-die Barriere für den Einstieg in die Programmierung zu senken. Dies wird
-emöglicht durch Abstraktion der technischen Komplexitäten und
-Bereitstellung intuitiver, grafischer Entwicklungswerkzeuge~\cite{Juhas2022}. Die
-Anwendung von Low-Code-Plattformen erweist sich insbesondere bei
-einfachen Projekten als vorteilhaft, stößt jedoch bei komplexeren
-Anwendungen an ihre Grenzen~\cite{Buscher2022}. Diese Arbeit beabsichtigt, zu
-untersuchen inwiefern Prinzipien der Low-Code-Entwicklung aus dem
-klassischen Computing übertragbar auf Quantencomputing sind. Basierend
-auf den Ergebnissen soll eine Schnittstelle zwischen Technologie des
-Quantencomputings und der Zugänglichkeit durch Low-Code-Ansätze
-geschafft und prototypisch umgesetzt werden. Dabei soll insbesondere
-erforscht werden, welche Kriterien und Low-Code-Methoden zur
-Modellierung und Implementierung von Quantenschaltkreisen eingesetzt
-werden können, um die Anwendung von Quantencomputern einem breiteren
-Spektrum von Nutzern zugänglich zu machen. Cerezo et al. zeigen
-insbesondere vielversprechende Anwendungen auf wie die Suche nach
-Grundzuständen von Molekülen, die Simulation der Dynamik von
-Quantensystemen und die Lösung linearer Gleichungssystemen~\cite{Cerezo2021}. So
-könnten Experten aus den genannten Domänen von Quantencomputern
-profitieren, ohne selbst tieferes Fachwissen im Quantencomputing zu
-benötigen~\cite{Motta2022}.
+% Im Klassischen bieten Low-Code-Entwicklungsumgebungen einen Ansatz, um
+% die Barriere für den Einstieg in die Programmierung zu senken. Dies wird
+% emöglicht durch Abstraktion der technischen Komplexitäten und
+% Bereitstellung intuitiver, grafischer Entwicklungswerkzeuge~\cite{Juhas2022}. Die
+% Anwendung von Low-Code-Plattformen erweist sich insbesondere bei
+% einfachen Projekten als vorteilhaft, stößt jedoch bei komplexeren
+% Anwendungen an ihre Grenzen~\cite{Buscher2022}. Diese Arbeit beabsichtigt, zu
+% untersuchen inwiefern Prinzipien der Low-Code-Entwicklung aus dem
+% klassischen Computing übertragbar auf Quantencomputing sind. Basierend
+% auf den Ergebnissen soll eine Schnittstelle zwischen Technologie des
+% Quantencomputings und der Zugänglichkeit durch Low-Code-Ansätze
+% geschafft und prototypisch umgesetzt werden. Dabei soll insbesondere
+% erforscht werden, welche Kriterien und Low-Code-Methoden zur
+% Modellierung und Implementierung von Quantenschaltkreisen eingesetzt
+% werden können, um die Anwendung von Quantencomputern einem breiteren
+% Spektrum von Nutzern zugänglich zu machen. Cerezo et al. zeigen
+% insbesondere vielversprechende Anwendungen auf wie die Suche nach
+% Grundzuständen von Molekülen, die Simulation der Dynamik von
+% Quantensystemen und die Lösung linearer Gleichungssystemen~\cite{Cerezo2021}. So
+% könnten Experten aus den genannten Domänen von Quantencomputern
+% profitieren, ohne selbst tieferes Fachwissen im Quantencomputing zu
+% benötigen~\cite{Motta2022}.
+
+Diese Bachelorarbeit widmet sich der Erforschung der Integration von Low-Code-Entwicklungsansätzen in die Quantencomputing-Entwicklung, 
+einem Feld, das aufgrund der hohen Komplexität und der erforderlichen spezialisierten Kenntnisse bislang weitgehend Experten vorbehalten war. 
+Ziel der Arbeit ist es, zu untersuchen, inwieweit etablierte Low-Code-Plattformen, die in der klassischen Softwareentwicklung Anwendung finden, 
+durch gezielte Anpassungen auch für die Entwicklung von Quantencomputing-Anwendungen genutzt werden können.
+
+Die Arbeit stützt sich auf eine systematische Literaturrecherche, die auf den Richtlinien von Kitchenham und Charters basiert. Dabei wurden 
+relevante Publikationen identifiziert und analysiert, um die Möglichkeiten und Grenzen von Low-Code-Werkzeugen im Kontext des Quantencomputings 
+zu beleuchten. Ein besonderes Augenmerk liegt auf Open-Source-Ansätzen und Model-Driven Engineering (MDE), da diese nicht nur die Barriere für 
+den Einstieg in das Quantencomputing senken, sondern auch die Anpassungsfähigkeit und Weiterentwicklung der Plattformen fördern können.
+
+Die Analyse zeigt, dass es zwar bereits erste Ansätze gibt, Low-Code-Plattformen für Quantencomputing nutzbar zu machen, diese jedoch noch in 
+einem sehr frühen Stadium sind. Insbesondere fehlen robuste Open-Source-Tools, die die breite Anwendbarkeit und Skalierbarkeit dieser Technologien 
+gewährleisten. Die Arbeit identifiziert zudem mehrere Forschungslücken, wie etwa die Notwendigkeit, die Effizienz und Anpassungsfähigkeit von 
+Low-Code-Frameworks im Quantencomputing zu verbessern.
+
+Die Ergebnisse dieser Arbeit bieten eine fundierte Grundlage für die Weiterentwicklung von Low-Code-Werkzeugen im Quantencomputing. Zukünftige 
+Forschungen sollten sich darauf konzentrieren, diese Werkzeuge zu optimieren und einen Prototyp zu entwickeln, der die Vorteile von Low-Code 
+und MDE nutzt, um die Komplexität der Quantenprogrammierung weiter zu reduzieren. Damit könnte ein wichtiger Beitrag zur Demokratisierung des 
+Zugangs zu Quantencomputing geleistet werden.
+
+% englisches abstract:
+% 
+% This bachelor's thesis is dedicated to researching the integration of low-code development approaches in quantum computing development, 
+% a field that has so far been largely reserved for experts due to its high complexity and the specialized knowledge required. 
+% The aim of the work is to investigate the extent to which established low-code platforms, which are used in classic software development, 
+% can also be used for the development of quantum computing applications through targeted adaptations.
+
+% The work is based on a systematic literature review based on the guidelines of Kitchenham and Charters. In the process 
+% relevant publications were identified and analyzed in order to shed light on the possibilities and limitations of low-code tools in the context of quantum computing. 
+% in the context of quantum computing. Particular attention is paid to open-source approaches and model-driven engineering (MDE), as these not only lower the barrier for 
+% barriers to entry into quantum computing, but can also promote the adaptability and further development of platforms.
+
+% The analysis shows that although there are already initial approaches to making low-code platforms usable for quantum computing, these are still at a very early stage. 
+% are still at a very early stage. In particular, there is a lack of robust open source tools that ensure the broad applicability and scalability of these technologies. 
+% scalability of these technologies. The work also identifies several research gaps, such as the need to improve the efficiency and adaptability of low-code frameworks in quantum computing. 
+% low-code frameworks in quantum computing.
+
+% The results of this work provide a sound basis for the further development of low-code tools in quantum computing. Future 
+% research should focus on optimizing these tools and developing a prototype that takes advantage of low-code and MDE to reduce the complexity of quantum computing. 
+% and MDE to further reduce the complexity of quantum programming. This could make an important contribution to the democratization of 
+% access to quantum computing.

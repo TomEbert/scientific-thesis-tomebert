@@ -9,7 +9,7 @@ die Datenerhebung und die anschließende Analyse. In der Such- und Auswahlphase 
 die die gestellten Forschungsfragen adressieren. Ein festgelegtes Protokoll definiert die Kriterien, die 
 zur Bewertung der Relevanz und Qualität der Studien herangezogen werden. Dieser methodische Ansatz stellt 
 sicher, dass die Ergebnisse transparent, nachvollziehbar und wiederholbar sind, wodurch Verzerrungen 
-minimiert werden~\cite{okoli2015guide}.
+minimiert werden~\cite{okoli2015guide}. 
 
 Die Datensynthese kombiniert die extrahierten Informationen, um ein umfassendes Bild des Forschungsstandes 
 zu zeichnen. Dies ermöglicht es, allgemeine Trends zu erkennen, bestehende Konzepte zu integrieren und 
@@ -18,85 +18,86 @@ fundierte Schlussfolgerungen gezogen werden, die einen erheblichen Mehrwert für
 die Forschungsgemeinschaft bieten~\cite{petersen2008systematic}.
 
 \section{Methodik}
-Basierend auf Kitchenham und Charters~\cite{kitchenham2007guidelines} wird ein systematisches 
-Literaturreview (SLR) durchgeführt, um ein Verständnis der gemeinsamen Charakteristika, Möglichkeiten 
-und Hindernissen von Low-Code-Tools zu erlangen. Die SLR bietet einen bewährten methodischen 
-Rahmen für systematische Literaturreviews in der Softwaretechnik. Basierend darauf wird die 
-anschließende Integration in die Entwicklung von Quantencomputing-Anwendungen aufgebaut.
+Basierend auf den Richtlinien von Kitchenham und Charters~\cite{kitchenham2007guidelines} wird ein systematisches 
+Literaturreview (SLR) durchgeführt, um ein tiefgehendes Verständnis der gemeinsamen Charakteristika, Möglichkeiten 
+und Hindernisse von Low-Code-Werkzeugen zu erlangen.
 
-Der SLR beginnt mit der Formulierung präziser Recherchefragen, die sich auf die 
-Identifikation und Analyse bestehender Low-Code-Plattformen, deren Programmiersprachen, 
-den spezifischen Fokus und Herausforderungen im Kontext des Quantencomputings 
-konzentrieren. Ein detailliertes Suchprotokoll legt relevante Datenbanken und 
-Suchbegriffe fest, während Einschluss- und Ausschlusskriterien die Relevanz und Qualität 
-der Studien gewährleisten.
+Vor der protokollbasierten Suche bietet sich eine explorative Suche an. Diese dient dazu, einen ersten Überblick über die verfügbare Literatur zu gewinnen und 
+die Relevanz der Forschungsfrage~\ref{research_question} zu überprüfen. Dabei werden die Suchbegriffe in den ausgewählten 
+Datenbanken eingegeben und potenziell relevante Ergebnisse festgehalten. Dieser Schritt ermöglicht es, 
+die Breite und Tiefe des Forschungsfeldes zu erfassen und die Suche gegebenenfalls zu verfeinern. 
+Die Ergebnisse der explorativen Suche dienen auch als Ausgangspunkt für die systematische Literaturrecherche. 
 
-Aus den selektierten Studien werden systematisch Daten zu den Kernaspekten der 
-Low-Code-Plattformen extrahiert. Diese Daten werden anschließend zusammengeführt, um ein 
-umfassendes Bild der aktuellen Forschungslandschaft und potenzieller Entwicklungspfade für 
-das geplante Framework zu zeichnen.
-
-Der Ablauf der systematischen Literaturrecherche nach Brereton et al.~\cite{brereton2007lessons} 
-ist in Abbildung~\ref{fig:slr_kitchenham} dargestellt. 
-Diese Grafik veranschaulicht die Schritte der SLR. Jeder dieser Schritte trägt zur systematischen und 
-strukturierten Erfassung der relevanten Literatur bei und bildet die Grundlage für die nachfolgende 
-Datenanalyse und Interpretation.
+Zur Visualisierung und Strukturierung des Prozesses dient eine Darstellung, die sich an den Ablauf der systematischen 
+Literaturrecherche von Kitchenham orientiert, jedoch um spezifische Aspekte aus der Arbeit von 
+Brereton et al.~\cite{brereton2007lessons} erweitert wurde. Diese Erweiterungen berücksichtigen insbesondere die 
+praktischen Erfahrungen und spezifischen Herausforderungen bei der Durchführung von SLRs im Bereich der Softwareentwicklung. 
+Abbildung~\ref{fig:slr_kitchenham} zeigt diesen angepassten Prozessablauf und verdeutlicht die methodischen Schritte, die 
+zur systematischen und strukturierten Erfassung der relevanten Literatur führen. Diese Schritte bilden die Grundlage für 
+die nachfolgende Datenanalyse und Interpretation. Die Schritte aus Phase 1, die Forschungsfrage sowie die Methodik, sind 
+in den folgenden Absätzen dokumentiert. Phase 2, die Durchführung der Literaturrecherche, findet sich in Kapitel 3.2. 
+Die Ergebnisse und deren Interpretation als Artefakte der Phase 3 sind in den Kapitel 3.3 und 3.4 dokumentiert. 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{graphics/slr_kitchenham_ablauf.png}
+    \includegraphics[width=0.8\textwidth]{graphics/slr_kitchenham_ablauf_new.pdf}
     \caption{Ablauf der systematischen Literaturrecherche nach Brereton et al.~\cite{brereton2007lessons}}
-    \label{fig:slr_kitchenham}
+\label{fig:slr_kitchenham}
 \end{figure}
-
 
 \begin{quote}
     \textbf{Forschungsfrage:} Wie können bestehende Low-Code-Entwicklungsansätze, insbesondere im Kontext von 
     Model-Driven Engineering (MDE) und Open-Source-Prinzipien, für die Anforderungen der Quantencomputing-Anwendungsentwicklung 
-    genutzt werden? Falls keine spezifischen Low-Code-Tools für Quantencomputing existieren, welche klassischen Low-Code-Tools 
+    genutzt werden? Falls keine spezifischen Low-Code-Werkzeuge für Quantencomputing existieren, welche klassischen Low-Code-Werkzeuge 
     bieten Potenzial für eine solche Integration?
-    \label{research_question}
+\label{research_question}
 \end{quote}
 
-\paragraph{Suchstrategie und Datenbanken}
-In den Suchmaschinen \textit{Google Scholar}, \textit{IEEE Xplore} und \textit{ACM Digital Library} 
-wird gesucht. Die Auswahl der Suchbegriffe wird strategisch vorgenommen, um die Breite und Tiefe der beiden 
-Hauptthemenbereiche abzudecken. 
+Für die Literaturrecherche wurden die wissenschaftlichen Datenbanken \textit{Google Scholar}, \textit{IEEE Xplore} und 
+\textit{ACM Digital Library} genutzt. Die Suchstrategie wurde gezielt entwickelt, um eine umfassende Abdeckung der relevanten 
+Themenbereiche zu gewährleisten.
 
-Die Suchbegriffe der ersten Iteration sind
+Bei der Auswahl der Suchbegriffe wurde darauf geachtet, die Breite der Themenfelder abzudecken. Die Begriffe wurden basierend 
+auf ihrer Relevanz für die Forschungsfrage ausgewählt und decken die zentralen Aspekte der Arbeit ab:
+
 \begin{itemize}
-    \item \textit{Low-Code Development} 
+    \item \textit{Low-Code Development}
     \item \textit{Quantum Computing}
     \item \textit{Model-Driven Engineering}
     \item \textit{Open Source}
-\end{itemize} 
+\end{itemize}
 
-Um die Schnittstellen zwischen Low-Code-Plattformen und Quantencomputing genauer zu untersuchen, 
-wurden die Suchbegriffe in verschiedenen Kombinationen verwendet, wobei Boolesche Operatoren wie 
-AND und OR zum Einsatz kommen, um die Suche zu verfeinern und zu spezifizieren.
+In einer ersten Iteration der Recherche wurden diese Suchbegriffe in verschiedenen Kombinationen verwendet. 
+Dabei kamen die Boolesche Operatoren \textit{AND} und \textit{OR} zum Einsatz, um die Suche zu präzisieren 
+und relevante Literatur gezielt zu identifizieren.
 
-Die Studien müssen frühestens ab dem Jahr 2014 veröffentlicht worden sein. Dies ist insbeondere in 
-Hinsicht darauf wichtig, ob das entsprechendes Tool noch aktiv gewartet wird. 
-Weiterhin ist die Aktualität der Studien wichtig, da sich die Technologien und Frameworks 
-im Bereich Low-Code-Entwicklung und Quantencomputing schnell weiterentwickeln.
+Um eine hohe Aktualität und Relevanz der gefundenen Studien sicherzustellen, wurden nur Veröffentlichungen berücksichtigt, 
+die ab dem Jahr 2014 erschienen sind. Dieses Kriterium hilft sicherzustellen, dass die untersuchten Tools und Methoden noch 
+aktiv entwickelt und gewartet werden, was insbesondere im schnelllebigen Bereich des Quantencomputing von Bedeutung ist.
 
-Es werden nur Studien in englischer oder deutscher Sprache berücksichtigt, die Peer-Review-Verfahren 
-durchlaufen haben. Insbesondere als relevant werden Papers erachtet, die Low-Code-Plattformen 
-in Open-Source Lizensierungen behandeln. Dies vereinfacht die Verwendbarkeit für 
-die spätere pilothafte Umsetzung eines Low-Code Tools für Quantencomputing-Anwendungen.
+Zusätzlich wurden folgende Einschlusskriterien festgelegt: Es werden ausschließlich Studien berücksichtigt, die in englischer 
+oder deutscher Sprache verfasst sind und ein Peer-Review-Verfahren durchlaufen haben. Diese methodische Herangehensweise 
+gewährleistet eine solide und wissenschaftlich fundierte Grundlage für die Analyse und Entwicklung von Low-Code-Ansätzen 
+für Quantencomputing-Anwendungen.
 
-Durch die Anwendung dieser 
-methodischen und strukturierten Vorgehensweise wird eine solide Basis für die Erforschung 
-und Analyse der Konzeption und Entwicklung von Low-Code-Frameworks für 
-Quantencomputing-Anwendungen geschaffen.
+Aufgrund des begrenzten Umfangs dieser Arbeit konnte nur eine eingeschränkte Anzahl an Publikationen gesichtet werden. 
+Es wurde jedoch darauf geachtet, dass die Einschränkungen so gesetzt sind, dass möglichst wenige relevante Publikationen 
+ausgeschlossen werden. Die Auswahlkriterien wurden sorgfältig gewählt, um sicherzustellen, dass die Ergebnisse trotz der 
+Einschränkungen eine hohe Relevanz und Aussagekraft für die Forschungsfragen dieser Arbeit behalten.
 
-\paragraph{ResearchRabbit}
+Die Relevanz der Publikationen wurde anhand eines gestuften Auswahlverfahrens bestimmt: Zunächst wurden die Titel gesichtet, 
+um eine erste Einschätzung hinsichtlich der thematischen Passgenauigkeit zu gewinnen. Anschließend wurden die Abstracts der 
+verbleibenden Publikationen detailliert analysiert, um deren inhaltliche Relevanz und Beitrag zu den Forschungsthemen der 
+Arbeit zu bewerten. Nur Publikationen, die sowohl im Titel als auch im Abstract eine hohe Übereinstimmung mit den definierten 
+Kriterien aufwiesen, wurden in die engere Auswahl aufgenommen. 
+
+\subsubsection{ResearchRabbit}
 In dieser Arbeit wird ResearchRabbit als ergänzendes Tool zur systematischen Literaturrecherche eingesetzt. 
-ResearchRabbit ist ein Softwaretool, das entwickelt wurde, um Arbeiten aus Forschungsgebieten als Graph darzustellen 
-und relevante Verbindungen zwischen wissenschaftlichen Publikationen auf Basis von Zitierungen und thematischen 
-Ähnlichkeiten zu visualisieren.\cite{cole2023researchrabbit} Nutzer des Tools geben spezifische Suchbegriffe ein, woraufhin ResearchRabbit eine 
-interaktive Map generiert. Diese Maps bieten eine visuelle Darstellung, die es ermöglicht, 
-zentrale Arbeiten und bisher weniger beachtete Verbindungen schnell zu identifizieren.
+ResearchRabbit ist ein Softwaretool, das entwickelt wurde, um Arbeiten aus Forschungsgebieten, basierend auf einer 
+Suchanfrage des Nutzers, als Graph darzustellen und relevante Verbindungen zwischen wissenschaftlichen Publikationen auf Basis von Zitierungen und thematischen 
+Ähnlichkeiten zu visualisieren~\cite{cole2023researchrabbit}. Der erstellte Graph bietet eine visuelle Darstellung, die es ermöglicht, 
+zentrale Arbeiten und bisher weniger beachtete Verbindungen schnell zu identifizieren. Durch diese Eigenschaften eignet sich 
+ResearchRabbit als Unterstützung für den Schritt des Snowballings in der systematischen Literaturrecherche. 
 
 Die Anwendung von ResearchRabbit in der systematischen Literaturrecherche bietet erhebliche Vorteile. Erstens 
 steigert das Tool die Effizienz des Rechercheprozesses, indem es durch die Visualisierung von Forschungsnetzwerken 
@@ -115,148 +116,139 @@ indem es komplexe Informationsstrukturen zugänglich und handhabbar macht. Durch
 in die systematische Literaturrecherche wird nicht nur die Effizienz des Prozesses verbessert, sondern auch 
 die Qualität und Tiefe der Forschungsergebnisse erhöht.
 
-\section{Durchführung der Literaturrecherche}
-Basierend auf den im vorherigen Abschnitt festgelegten Kriterien wird die systematische Literaturrecherche (SLR) 
+\section{Durchführung des SLR}
+Basierend auf den im vorherigen Abschnitt festgelegten Kriterien wird das SLR
 durchgeführt. Im Folgenden werden die einzelnen Schritte der Recherche detailliert dokumentiert und die Ergebnisse 
-visualisiert. Dies umfasst die spezifischen Suchanfragen in den ausgewählten wissenschaftlichen Datenbanken, die 
-angewandten Suchlimits sowie die quantitativen Ergebnisse der Suchvorgänge. Durch diese detaillierte Dokumentation 
-wird die Nachvollziehbarkeit und Reproduzierbarkeit der Forschung sichergestellt, während die quantitativen 
-Ergebnisse eine fundierte Basis für die weitere Analyse bieten.
+visualisiert. 
+% Dies umfasst die spezifischen Suchanfragen in den ausgewählten wissenschaftlichen Datenbanken, die 
+% angewandten Suchlimits sowie die quantitativen Ergebnisse der Suchvorgänge. Durch diese detaillierte Dokumentation 
+% wird die Nachvollziehbarkeit und Reproduzierbarkeit der Forschung sichergestellt, während die quantitativen 
+% Ergebnisse eine fundierte Basis für die weitere Analyse bieten.
 
-\paragraph{Explorative Suche}
-Die explorative Suche dient dazu, einen ersten Überblick über die verfügbare Literatur zu gewinnen und 
-die Relevanz der Forschungsfrage~\ref{research_question} zu überprüfen. Dabei werden die Suchbegriffe in den ausgewählten 
-Datenbanken eingegeben und potenziell relevante Ergebnisse festgehalten. Dieser Schritt ermöglicht es, 
-die Breite und Tiefe des Forschungsfeldes zu erfassen und die Suche gegebenenfalls zu verfeinern. 
-Die Ergebnisse der explorativen Suche dienen auch als Ausgangspunkt für die systematische Literaturrecherche. 
-Eine erste Anfrage in Google Scholar mit \textit{intitle:"low-code" tools platforms comparison overview} liefert 489 
-Ergebnisse. Diese werden explorativ gesichtet und auf Relevanz geprüft. Insgesamt wurden initial 4 Publikationen 
+
+Eine initiale explorative Suche in Google Scholar mit \texttt{intitle:"low-code" tools platforms comparison overview} lieferte 489 
+Ergebnisse. Diese werden explorativ gesichtet und auf Relevanz geprüft. Insgesamt wurden initial vier Publikationen 
 als relevant identifiziert. Zwei davon sind insbesondere relevant, da sie einen Vergleich verschiedener 
 Low-Code-Plattformen und deren Charakteristika ziehen. 
 
-Durch Hinweise auf MDE und LCD Lösungen einmal aus dem Quantencomputing und einmal aus dem Open Source Bereich werden 
-weiterhin zwei Publikationen hinzugenommen. Diese sind zum eine Publikation über \textit{Classiq}~\cite{minerbi2022quantum}, zum anderen 
+In einer ersten unstrukturierten Suche wurden zudem zwei Publikationen zu MDE und LCD Lösungen je einmal aus dem Quantencomputing und 
+einmal aus dem Open Source Bereich identifiziert und hinzugenommen. Diese sind zum eine Publikation über \textit{Classiq}~\cite{minerbi2022quantum}, zum anderen 
 eine Publikation über \textit{BESSER}~\cite{alfonso2024building}. 
-
-% ggf related work ⬇️
 Classiq ist ein Framework zur Entwicklung von Quantencomputeralgorithmen, das darauf abzielt, die Komplexität der Programmierung 
 auf Gatterniveau zu reduzieren und die Zugänglichkeit für Entwickler zu verbessern. Es ermöglicht die Erstellung optimierter und 
-hardwarebewusster Quantenschaltkreise aus hochabstrakten funktionalen Modellen. Diese Plattform automatisiert den Prozess der 
-Quantenalgorithmuserstellung, indem sie Nutzern erlaubt, sich auf die funktionalen Anforderungen zu konzentrieren, während die 
-Plattform die Details der Schaltkreisimplementierung übernimmt.
+an die Hardware angepasster Quantenschaltkreise aus abstrakten funktionalen Modellen. Dieses Framework automatisiert den Prozess der 
+Quantenalgorithmuserstellung, indem es Nutzern erlaubt, sich auf die funktionalen Anforderungen zu konzentrieren, während das Framework 
+die Details der Schaltkreisimplementierung übernimmt. Ein Hauptvorteil von Classiq ist die Möglichkeit, Quantenalgorithmen visuell zu 
+entwerfen und automatisch die besten Implementierungsoptionen 
+zu ermitteln, die den Systemanforderungen und Hardwarebeschränkungen entsprechen. Dies soll den Aufwand für handgeschriebenen Code und 
+Optimierung reduzieren~\cite{minerbi2022quantum}. 
 
-Ein Hauptvorteil von Classiq ist die Möglichkeit, Quantenalgorithmen visuell zu entwerfen und automatisch die besten Implementierungsoptionen 
-zu ermitteln, die den Systemanforderungen und Hardwarebeschränkungen entsprechen. Dies reduziert den Aufwand für die manuelle Codierung und 
-Optimierung erheblich. Classiq unterstützt zudem die Integration domänenspezifischer Expertise, was die Entwicklung spezialisierter 
-Quantenlösungen in Bereichen wie Finanzwesen, Chemie und Cybersicherheit erleichtert.
+% Classiq unterstützt zudem die Integration domänenspezifischer Expertise, was die Entwicklung spezialisierter 
+% Quantenlösungen in Bereichen wie Finanzwesen, Chemie und Cybersicherheit erleichtert.
 
-Zusätzlich bietet Classiq Werkzeuge wie Schaltkreisvisualisierungen und Hardwarevergleichstabellen, die Entwicklern helfen, die 
-besten Hardwareoptionen für ihre Algorithmen zu identifizieren und zu testen, ohne tiefgehende Hardwarekenntnisse zu benötigen. 
-Diese Features tragen dazu bei, Quantencomputing für eine breitere Nutzerbasis zugänglich zu machen, von 
-Quantenexperten bis hin zu Domänenexperten, die keine tiefen Kenntnisse in Quantenphysik besitzen.
+% Zusätzlich bietet Classiq Werkzeuge wie Schaltkreisvisualisierungen und Hardwarevergleichstabellen, die Entwicklern helfen, die 
+% besten Hardwareoptionen für ihre Algorithmen zu identifizieren und zu testen, ohne tiefgehende Hardwarekenntnisse zu benötigen. 
+% Diese Features tragen dazu bei, Quantencomputing für eine breitere Nutzerbasis zugänglich zu machen, von 
+% Quantenexperten bis hin zu Domänenexperten, die keine tiefen Kenntnisse in Quantenphysik besitzen.
 
-Durch diese Funktionen unterstützt Classiq die Innovation und Kollaboration im Bereich Quantencomputing und ebnet den 
-Weg für die Entwicklung fortschrittlicher Quantenanwendungen~\cite{minerbi2022quantum}. 
+% Durch diese Funktionen unterstützt Classiq die Innovation und Kollaboration im Bereich Quantencomputing und ebnet den 
+% Weg für die Entwicklung fortschrittlicher Quantenanwendungen~\cite{minerbi2022quantum}. 
 
-Das BESSER-Framework ist eine Open-Source-Low-Code-Plattform. Die Plattform enthält verschiedene Code-Generatoren, die automatisch Code 
-für unterschiedliche Programmiersprachen und Frameworks generieren können. 
-
-Ein Merkmal von BESSER ist seine Erweiterbarkeit und Anpassungsfähigkeit. Die Plattform ist so konzipiert, dass sowohl die 
+Das BESSER-Framework ist eine Open-Source Low-Code-Plattform. Ein Merkmal von BESSER ist seine Erweiterbarkeit 
+und Anpassungsfähigkeit. Die Plattform ist so konzipiert, dass sowohl die 
 Spezifikationsmethoden als auch die Code-Generatoren von der Community erweitert und angepasst werden können. Dies fördert 
 nicht nur die Innovation innerhalb der Entwicklergemeinschaft, sondern ermöglicht es auch, spezifische Anforderungen und 
 Präferenzen der Nutzer zu berücksichtigen. Da BESSER eine Open-Source-Plattform ist, können Nutzer die Plattform frei 
-modifizieren und erweitern, was die Gefahr von Vendor-Lock-ins minimiert und die Flexibilität erhöht.
-
+modifizieren und erweitern, was die Gefahr eines Vendor-Lock-ins minimiert und die Flexibilität erhöht.
 Darüber hinaus adressiert BESSER die wachsende Komplexität moderner Softwaresysteme, indem es Low-Code-Entwicklungsansätze mit 
 fortschrittlichen Modellierungs- und Generierungstechniken kombiniert. Dies macht es zu einem geeigneten Werkzeug für die Entwicklung 
 komplexer, intelligenter Softwarelösungen, die auf die Bedürfnisse einer breiten Nutzerbasis 
 zugeschnitten sind, von technischen Experten bis hin zu Geschäftsanwendern~\cite{alfonso2024building}.
 % ggf related work ⬆️
 
-\paragraph{Protokollbasierte Suche}
+\subsubsection{Protokollbasierte Suche}
 Im Schritt der protokollbasierten Suche werden die vorgestellten Suchbegriffe und Kriterien für die systematische Literaturrecherche 
 angewandt. 
-In der Grafik~\ref{fig:search_process} ist der Ablauf der Suche nach Publikationen innerhalb der 
-systematischen Literaturrecherche dargestellt. Insbesondere wird hier nochmal erwähnt, dass beim Schritt des 
-Snowballings das Tool ResearchRabbit eingesetzt wird, um die Suche zu unterstützen. 
+% In der Grafik~\ref{fig:search_process} ist der Ablauf der Suche nach Publikationen innerhalb der 
+% systematischen Literaturrecherche dargestellt. Insbesondere wird hier nochmal erwähnt, dass beim Schritt des 
+% Snowballings das Tool ResearchRabbit eingesetzt wird, um die Suche zu unterstützen. 
 
-% include graphics/ablauf_der_suche.png
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=1\textwidth]{graphics/ablauf_der_suche.png}
-    \caption{Ablauf der systematischen Literaturrecherche}
-    \label{fig:search_process}
-\end{figure}
+% % include graphics/ablauf_der_suche.png
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=1\textwidth]{graphics/ablauf_der_suche.png}
+%     \caption{Ablauf der systematischen Literaturrecherche}
+%     \label{fig:search_process}
+% \end{figure}
 
-Um einen ersten Überblick über die Publikationen zu gewinnen wird initial die folgende Suchanfrage in den Datenbanken verwendet:
+In der ersten Iteration der protokollbasierten Suche wird die folgende Suchanfrage in den Datenbanken verwendet:
 
 \begin{quote}
-    Suchanfrage 1 (Stand: 12.07.2024):
+    Suchanfrage 1 (Durchgeführt am: 12.07.2024):
 
-    (''Low-Code Development'' OR ''Quantum Computing'' OR ''Model-Driven Engineering'' OR ''Open Source'')
+    \texttt{"Low-Code Development" OR "Quantum Computing" OR "Model-Driven Engineering" OR "Open Source")}
 
-    Erscheinungsdatum der Publikationen: 2014 - 2024
+    % Erscheinungsdatum der Publikationen durch Filterung: 2014 - 2024
 \end{quote}
 
 \begin{table}[h!]
     \centering
     \caption{Anzahl der Suchergebnisse für Suchanfrage 1}
-    \label{tab:search_1_results}
     \begin{tabular}{|l|c|}
-    \hline
-    \textbf{Datenbank} & \textbf{Anzahl der Ergebnisse} \\ \hline
-    Google Scholar & 17.800 \\ \hline
-    IEEE Xplore & 62.421 \\ \hline
-    ACM Digital Library & 79.035 \\ \hline
+        \hline
+        \textbf{Datenbank} & \textbf{Anzahl der Ergebnisse} \\ \hline
+        Google Scholar & 17.800 \\ \hline
+        IEEE Xplore & 62.421 \\ \hline
+        ACM Digital Library & 79.035 \\ \hline
     \end{tabular}
+\label{tab:search_1_results}
 \end{table}
     
-Diese Suchanfrage lieferte die in~\ref{tab:search_1_results} dargestellten Ergebnisse. Dies 
+Diese Suchanfrage lieferte die in Tabelle~\ref{tab:search_1_results} dargestellten Ergebnisse. Dies 
 zeigt die große Bandbreite und Relevanz der Themenfelder. 
-Um hier einen Überblick zu gewinnen, wie die Verteilung der Publikationen zu den jeweiligen Konzepten ausfällt, 
-wird eine Analyse der Anzahl der Publikationen pro Jahr, und Konzept, also MDE oder Low-Code vorgenommen.
 
-Deren Ergebnisse sind in den folgenden Grafiken dargestellt:
+Um zusätzlich einen Überblick zu gewinnen, wie die Verteilung der Publikationen zu den jeweiligen Konzepten ausfällt, 
+wird eine Analyse der Anzahl der Publikationen pro Jahr, und Konzept, also MDE oder Low-Code vorgenommen. 
+Die Ergebnisse dieser Analyse sind in den Grafiken~\ref{fig:publications_lcd_per_year} und~\ref{fig:publications_mde_per_year} dargestellt. 
+In der Grafik~\ref{fig:publications_mde_per_year} ist die x-Achse für das Erscheinungsjahr bewusst auch außerhalb des vorher gesteckten Zeitfilters 
+angelegt, um zu verdeutlichen, dass LCD im Vergleich zu MDE ein deutlich jüngeres Forschungsthema ist.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=1\textwidth]{graphics/lcd_and_mde_publications_over_years.png}
-    \caption{Anzahl der Publikationen zu MDE und LCD pro Jahr}
-    \label{fig:publications_mde_and_lcd_per_year}
-\end{figure}
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=1\textwidth]{graphics/lcd_and_mde_publications_over_years.png}
+%     \caption{Anzahl der Publikationen zu MDE und LCD pro Jahr}
+%     \label{fig:publications_mde_and_lcd_per_year}
+% \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1\textwidth]{graphics/lcd_publications_over_years.png}
-    \caption{Anzahl der Publikationen LCD pro Jahr}
+    \caption{Anzahl der Publikationen LCD pro Jahr nach Suchanfrage 1}
     \label{fig:publications_lcd_per_year}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1\textwidth]{graphics/mde_publications_over_years.png}
-    \caption{Anzahl der Publikationen zu MDE pro Jahr}
+    \caption{Anzahl der Publikationen zu MDE pro Jahr nach Suchanfrage 1}
     \label{fig:publications_mde_per_year}
 \end{figure}
 
-Es fällt auf, dass die Anzahl der Publikationen zu Low-Code-Entwicklung erstens insgesamt deutlich niedriger ausfällt 
-als die Anzahl der Publikationen zu Model-Driven Engineering. Zweitens ist bezüglich des Erscheinungsjahres festzustellen 
-das in Publikation Low-Code-Entwicklung ein deutlich jüngeres Forschungsthema ist.
-
-Da die Anzahl der Ergebnisse zu groß ist um effektiv bearbeitet zu werden, wird die Suche 
-weiter verfeinert. Weiterhin fällt beim ersten Screening auf, dass viele Ergebnisse nicht die 
+Weiterhin fällt auf, dass die Anzahl der Publikationen zu Low-Code-Entwicklung erstens insgesamt deutlich niedriger ausfällt 
+als die Anzahl der Publikationen zu Model-Driven Engineering. Da die Anzahl der Ergebnisse insgesamt zu groß ist, um effektiv 
+bearbeitet zu werden, wird die Suche weiter verfeinert. Außerdem fällt bei einer ersten Durchsicht auf, dass viele Ergebnisse nicht die 
 gewünschte Schnittmenge aus Low-Code-Entwicklung und Quantencomputing abdecken, sondern 
 nur eines der beiden Themenfelder behandeln. Um also die Relevanz der Ergebnisse zu erhöhen, 
 werden spezifischere Suchanfragen formuliert. 
 
-In einer zweiten Iteration der Suche wurde daher die folgende Suchanfrage verwendet:
+In der zweiten Iteration der protokollbasierten Suche wurde die folgende Suchanfrage verwendet:
 
 \begin{quote}
-    Suchanfrage 2 (Stand: 14.07.2024):
+    Suchanfrage 2 (Durchgeführt am: 14.07.2024):
 
-    (''Low Code Platform'' OR ''Low Code Development'' OR ''Low-Code Development'' OR ''Model-Driven Engineering'') AND (''Quantum Computing'')
+    \texttt{("Low Code Platform" OR "Low Code Development" OR "Low-Code Development" OR "Model-Driven Engineering") AND ("Quantum Computing")}
 
-    Erscheinungsdatum der Publikationen: 2014 - 2024
+    % Erscheinungsdatum der Publikationen: 2014 - 2024
 \end{quote}
 
 \begin{table}[h!]
@@ -272,46 +264,31 @@ In einer zweiten Iteration der Suche wurde daher die folgende Suchanfrage verwen
     \end{tabular}
 \end{table}
 
-Die Ergebnisse der zweiten Suchanfrage sind in Tabelle~\ref{tab:search_2_results} dargestellt. Bzgl. der Erscheinungsjahre fällt auf, dass in 
-IEEE Xplore die drei Publikationen zwischen 2021 und 2023 erschienen. in der ACM Digital Library sind die Publikationen zwischen 2021 und 2024 erschienen. 
+Die Ergebnisse der zweiten Suchanfrage sind in Tabelle~\ref{tab:search_2_results} dargestellt. Im Hinblick auf die Erscheinungsjahre fällt auf, dass 
+die drei Publikationen in IEEE Xplore zwischen 2021 und 2023 erschienen. In der ACM Digital Library sind die Publikationen zwischen 2021 und 2024 erschienen. 
 Lediglich die Google Scholar Suche ergab Publikationen, die bis ins Jahr 2014 als Untergrenze der gewünschten Filterung zurückreichen. 
 
-Da die Anzahl der Ergebnisse nun sinnvoller ist, wird mit der Durchsicht der Titel und Abstracts fortgefahren. 
-Begonnen wird mit den drei Ergebnissen aus IEEE Xplore. Durchsicht der Abstracts ergibt, dass die Publikationen 
-alle drei relevant sind, da sie sich inhaltlich in der Schnittmenge aus MDE und Quantencomputing befinden. 
-Um für die Datenbank IEEE Xplore den Schritt der Auswahl vorwegzugreifen, werden die drei Publikationen 
-direkt in die engere Auswahl übernommen. 
-
-Als nächsten werden die Ergebnisse der ACM Digital Library ebenfalls durchgesehen. Dabei werden beim Schritt der Auswahl notwendigerweise die 
+Da die Anzahl der Ergebnisse nun sinnvoller zu bearbeiten war, wurde mit der Durchsicht der Titel und Abstracts fortgefahren. 
+Die Durchsicht der Abstracts ergab, dass die Publikationen aus IEEE Xplore alle drei relevant sind, da sie sich inhaltlich in der 
+Schnittmenge aus MDE und Quantencomputing befinden. Als Nächstes wurden beim Schritt der Auswahl notwendigerweise die 
 Ergebnisse der ACM Digital Library gezielt gefiltert, um die Relevanz und Qualität der eingeschlossenen Studien sicherzustellen. 
-Proceedings wurden dabei bewusst nicht in die Auswahl einbezogen. Der Grund dafür ist, dass Proceedings häufig eine 
-Vielzahl von Kurzbeiträgen enthalten, die nicht denselben rigorosen Peer-Review-Prozess durchlaufen wie Journal-Artikel 
-und oft eine geringere wissenschaftliche Tiefe aufweisen. Dies kann die Validität und Verlässlichkeit der 
-Forschungsergebnisse beeinträchtigen. Zudem sind Proceedings meist vorläufige Ergebnisse, die 
-später in detaillierteren Journal-Artikeln veröffentlicht werden. Von den initialen 30 Ergebnissen 
-in der ACM Digital Library erfüllten lediglich 4 die AuswahlkriterienDurch diese Vorgehensweise wurde 
-sichergestellt, dass nur qualitativ hochwertige und relevante Studien in die Analyse einbezogen wurden.
-
-Weiterhin wurden Publikationen ausgeschlossen, deren Titel oder Abstract darauf schließen ließen, dass sie thematisch 
-nicht relevant sind. Dieser Ausschluss erfolgte, um die Fokussierung auf Studien zu gewährleisten, die direkt mit 
-Low-Code-Entwicklungsansätzen in Quantencomputing-Anwendungen verbunden sind. Diese strenge Selektion ist entscheidend, um 
+Von den initialen 30 Ergebnissen aus der ACM Digital Library erfüllten lediglich vier die Auswahlkriterien. Diese strenge Selektion ist entscheidend, um 
 sicherzustellen, dass die verbleibenden Studien tatsächlich die Forschungsfrage~\ref{research_question} adressieren und qualitative Erkenntnisse liefern können. 
-
-Durchsicht der 176 Ergebnisse aus Google Scholar ergab, dass 20 Publikationen die Kriterien für die engere Auswahl erfüllen. 
-
-Für den Schritt der Deduplizierung wurden die Ergebnisse aus den drei Datenbanken zusammengeführt. 
-So ergeben sich ohne Duplikate insgesamt 25 Publikationen, die für die weitere Analyse in Betracht gezogen werden. 
+Aus den 176 Ergebnisse aus Google Scholar erfüllten 20 Publikationen die Kriterien für die engere Auswahl. 
+Im Schritt der Deduplizierung wurden die Ergebnisse aus den drei Datenbanken zusammengeführt. 
+So ergaben sich ohne Duplikate insgesamt 25 Publikationen, die für die weitere Analyse in Betracht gezogen werden. 
 
 Bevor durch Snowballing weitere möglicherweise relevante Publikationen gesucht werden und die Volltexte der Publikationen analysiert werden, 
-wird eine dritte Suchanfrage formuliert. Diese zielt darauf ab, durch eine noch feinere Fomulierung der Anfrage weitere bisher nicht gefundene 
-Ergebnisse zu identifizieren. 
+wird eine dritte Suchanfrage formuliert. Diese zielt darauf ab, durch eine angepasste Formulierung der Anfrage weitere bisher nicht gefundene 
+Ergebnisse zu identifizieren. Es zeigte sich, dass die Formulierung \texttt{"low-code"} mit Bindestrich ausreichend ist, da Publikationen, die
+\texttt{low code} ohne Bindestrich enthalten, auch in den Ergebnissen enthalten sind und die Schreibweise mit Bindestrich gängiger ist. 
 
 \begin{quote}
-    Suchanfrage 3 (Stand: 16.07.2024):
+    Suchanfrage 3 (Ausgeführt am: 16.07.2024):
 
-    (intitle:''low-code'' quantum computing)
+    \texttt{(intitle:"low-code" quantum computing)} 
 
-    Erscheinungsdatum der Publikationen: 2014 - 2024
+    % Erscheinungsdatum der Publikationen: 2014 - 2024
 \end{quote}
 
 Hierfür ergibt sich die in Tabelle~\ref{tab:search_3_results} dargestellte Anzahl an Ergebnissen. 
@@ -329,28 +306,41 @@ Hierfür ergibt sich die in Tabelle~\ref{tab:search_3_results} dargestellte Anza
     \end{tabular}
 \end{table}
 
-Erneut ist die Anzahl an Suchergebnissen geringer geworden. Durchsicht der neuen Ergebnisse ergibt, dass zwar aus Google Scholar 
-keine weiteren Publikationen in die engere Auswahl übernommen werden, jedoch aus der ACM Digital Library 7 sowie aus IEEE Xplore 1 Publikation. 
-Insgesamt ergibt sich somit eine Anzahl von 33 unterschiedlichen Publikationen, die für die weitere Analyse in Betracht gezogen werden. 
+Durchsicht und Deduplikation der neuen Ergebnisse ergab, dass zwar aus Google Scholar keine weiteren Publikationen für die engere Auswahl übernommen werden konnten, 
+jedoch aus der ACM Digital Library sieben sowie aus IEEE Xplore eine Publikation. Insgesamt ergibt sich somit eine Anzahl von 33 
+unterschiedlichen Publikationen, die für die weitere Analyse in Betracht gezogen werden. 
 
 Mit den nun identifizierten Publikationen wird der Schritt des Snowballings durchgeführt. Hierbei wird ResearchRabbit eingesetzt, um 
 weitere Publikationen zu identifizieren, die inhaltlich mit den bereits identifizierten Publikationen in Verbindung stehen und somit 
 potenziell relevant sind. Das Tool zeigt dabei die Verbindungen zwischen den Publikationen an und ermöglicht es, die Netzwerke 
 zu älteren und neueren Publikationen zu visualisieren. Es ergeben sich 21 ältere Publikationen, die mit den bereits identifizierten 33 
-Publikationen in Verbindung stehen. Dazu kommen 6 neuere die auf die bereits identifizierten Publikationen verweisen. 
+Publikationen in Verbindung stehen. Dazu kommen sechs neuere die auf die bereits identifizierten Publikationen verweisen. 
 
-Für diese wird nun ebenfalls der Titel und Abstract durchgesehen, um zu entscheiden, ob sie in die engere Auswahl übernommen werden. 
-Insgesamt lassen sich so 13 weitere Publikationen identifizieren, die für die weitere Analyse in Betracht gezogen werden. 
+Für diese wurde ebenfalls der Titel und Abstract durchgesehen, um zu entscheiden, ob sie in die engere Auswahl übernommen werden. 
+Insgesamt ergaben sich nach erneuter Durchsicht so insgesamt 41 Publikationen aus explorativer und protokollbasierter Suche. 
+Diese sind in der Tabelle~\ref{tab:publikationen} dargestellt. 
 
-Um sicherzustellen, dass alle identifizierten Publikationen relevant sind für die thematische Schnittmenge aus Low-Code Development bzw. 
-MDE und Quantencomputing, werden die Abstracts aller Publikationen analysiert. Dabei wird geprüft, ob die Publikationen die 
-Forschungsfrage~\ref{research_question} adressieren und qualitative Erkenntnisse liefern können. 
-
-\section{Ergebnisse}
-Insgesamt ergeben sich somit aus der explorativen und protokollbaiserten Suche 41 Publikationen, die für die weitere Analyse 
-in Betracht gezogen werden. Diese sind in der Tabelle~\ref{tab:publikationen} dargestellt. 
-
-Die Verteilung der Publikationen auf die Jahre ist in Grafik~\ref{fig:publications_per_year} dargestellt.
+Die Metadaten der resultierenden Menge von Publikationen wurde mithilfe von Excel untersucht. Dabei wurde für tiefergehende Einblicke in die 
+thematischen Schwerpunkte der Publikationen das Abstract der Arbeit nach Schlüsselworten untersucht, um sie jeweils den entsprechenden 
+Kategorien zuzuordnen. Hierbei kam die Formel 
+\begin{lstlisting}[caption=Excel Formel zur Suche von Worten im Abstract]
+=CONCAT(
+    IF(OR(ISNUMBER(SEARCH("Low"; D12)); ISNUMBER(SEARCH("Low"; E12))); "Low-Code, "; "");
+    IF(OR(ISNUMBER(SEARCH("Quantum"; D12)); ISNUMBER(SEARCH("Quantum"; E12))); "Quantum             Computing, "; "");
+    IF(OR(ISNUMBER(SEARCH("model"; D12)); ISNUMBER(SEARCH("model"; E12))); "Model-Driven            Engineering, "; "");
+    IF(OR(ISNUMBER(SEARCH("Open Source"; D12)); ISNUMBER(SEARCH("Open Source"; E12)));              "Open Source"; "")
+    )
+\end{lstlisting}
+zum Einsatz die je nach Schlüsselwort im Abstract einen String generiert, der Aufschluss über die thematischen Schwerpunkte der Publikation gibt. 
+Da nur das Abstract und nicht die jeweilige gesamte Ausarbeitung für die Suche nach den Schlüsselworten genutzt wurde, ist die Präzision der Zuordnung 
+nicht so hoch wie bei einer manuellen Durchsicht des gesamten Textes. Dieser Kompromiss aus Schnelligkeit und Genauigkeit wurde gewählt, um die 
+Effizienz des Prozesses zu erhöhen und dabei dennoch eine Übersicht über die grobe Verteilung der Themenbereiche zu erhalten. Die Tabelle ist im Anhang der 
+Ausarbeitung. 
+Die zeitliche Verteilung der Publikationen zeigt sich über die Jahre hinweg unterschiedlich stark. Abbildung~\ref{fig:publications_per_year} 
+veranschaulicht, wie sich die Anzahl der relevanten Publikationen im Verlauf der Jahre entwickelt hat. 
+Die Kategorisierung der Publikationen nach ihren thematischen Schwerpunkten, dargestellt in Abbildung~\ref{fig:publications_per_topic}, 
+visualisiert die Häufigkeit der verschiedenen Themenbereiche und ermöglicht eine Einsicht in die Verteilung der 
+Forschungsschwerpunkte innerhalb des Low-Code- und Quantencomputing-Feldes. 
 
 \begin{figure}[h!]
     \centering
@@ -359,16 +349,12 @@ Die Verteilung der Publikationen auf die Jahre ist in Grafik~\ref{fig:publicatio
     \label{fig:publications_per_year}
 \end{figure}
 
-Die Kategorisierung nach Themenbereichen ist in der Grafik~\ref{fig:publications_per_topic} dargestellt.
-
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{graphics/anzahl_themen_pubs.png}
     \caption{Anzahl der Publikationen pro Themenbereich}
     \label{fig:publications_per_topic}
 \end{figure}
-
-%  ggf kommt hier auch das ganze quantitave erklärzeugs was bisher im abschnitt davor mit drin ist, vllt kann mans au mergen
 
 \section{Synthese und Bewertung der Ergebnisse}
 Die Synthese und Bewertung der Ergebnisse erfolgt in mehreren Schritten, um die identifizierten Studien zu analysieren, 
@@ -394,7 +380,7 @@ herangezogen werden.
 \end{table}
 
 \subsubsection{Low-Code Tools}
-% Die Untersuchung der in den Publikationen beschriebenen Low-Code-Tools zeigt eine klare Ausrichtung auf die Verbesserung der 
+% Die Untersuchung der in den Publikationen beschriebenen Low-Code-Werkzeuge zeigt eine klare Ausrichtung auf die Verbesserung der 
 % Effizienz und Zugänglichkeit in der Softwareentwicklung, allerdings mit unterschiedlichen Schwerpunkten und Anwendungsbereichen. 
 % Die Arbeit von Sahay et al. (2020)~\cite{Sahay_2020} und Bock (2021)~\cite{Bock_2021_essence} analysiert kommerzielle Low-Code-Plattformen 
 % wie OutSystems, Mendix, Appian, PowerApps und Salesforce. Diese Plattformen wurden hauptsächlich für den Einsatz in 
@@ -429,12 +415,12 @@ herangezogen werden.
 
 % Insgesamt zeigt die Analyse, dass die meisten untersuchten Low-Code-Plattformen für klassische Softwareentwicklungsprozesse 
 % entwickelt wurden, während Anwendungen im Bereich des Quantencomputings weitgehend unberücksichtigt bleiben. Quantumoonlight 
-% stellt hier eine Ausnahme dar und verdeutlicht, dass es Potenzial für die Entwicklung spezialisierter Low-Code-Tools für das 
+% stellt hier eine Ausnahme dar und verdeutlicht, dass es Potenzial für die Entwicklung spezialisierter Low-Code-Werkzeuge für das 
 % Quantencomputing gibt. Diese Forschungslücke weist auf die Notwendigkeit hin, Low-Code-Ansätze weiterzuentwickeln, um sie 
 % für die Anforderungen des Quantencomputings zu adaptieren und damit eine breitere Anwendung dieser Technologie zu ermöglichen.
 
 
-Die Untersuchung der in den Publikationen beschriebenen Low-Code-Tools zeigt eine klare Ausrichtung auf die Verbesserung der 
+Die Untersuchung der in den Publikationen beschriebenen Low-Code-Werkzeuge zeigt eine klare Ausrichtung auf die Verbesserung der 
 Effizienz und Zugänglichkeit in der Softwareentwicklung, jedoch mit unterschiedlichen Schwerpunkten und Anwendungsbereichen. 
 Die Arbeiten von Sahay et al.~\cite{Sahay_2020} und Bock~\cite{Bock_2021_essence} analysieren umfassend kommerzielle 
 Low-Code-Plattformen wie OutSystems, Mendix, Appian, PowerApps und Salesforce. Diese Plattformen wurden primär für klassische 
@@ -452,7 +438,7 @@ Ein besonders relevantes Beispiel im Kontext von Quantencomputing ist die Plattf
 Cicalese~\cite{Amato_2023} beschrieben wird. Quantumoonlight ist speziell für Quantum Machine Learning (QML) entwickelt worden 
 und stellt eine benutzerfreundliche Umgebung bereit, in der Quantenalgorithmen modelliert und getestet werden können. Diese 
 Plattform, die sowohl als kommerzielle als auch als Open-Source-Lösung verfügbar ist, zeigt das Potenzial spezialisierter 
-Low-Code-Tools für das Quantencomputing.
+Low-Code-Werkzeuge für das Quantencomputing.
 
 Darüber hinaus untersuchen Moin et al.~\cite{Moin_2023} die Anwendung von Model-Driven Engineering (MDE) im Rahmen der 
 Low-Code-Entwicklung, insbesondere für Quantum Federated Learning (QFL). Diese Arbeit verdeutlicht, wie MDE-Tools, die 
@@ -461,7 +447,7 @@ unterstreicht das Potenzial von MDE als integralen Bestandteil der Low-Code-Entw
 
 Insgesamt zeigt die Analyse, dass die meisten untersuchten Low-Code-Plattformen für klassische Softwareentwicklungsprozesse 
 entwickelt wurden, während Anwendungen im Bereich des Quantencomputings bisher eine untergeordnete Rolle spielen. Quantumoonlight 
-stellt eine bemerkenswerte Ausnahme dar und verdeutlicht, dass spezialisierte Low-Code-Tools für das Quantencomputing möglich 
+stellt eine bemerkenswerte Ausnahme dar und verdeutlicht, dass spezialisierte Low-Code-Werkzeuge für das Quantencomputing möglich 
 und vielversprechend sind. Diese Forschungslücke weist darauf hin, dass es notwendig ist, Low-Code-Ansätze weiterzuentwickeln, um 
 sie für die Anforderungen des Quantencomputings zu adaptieren und damit eine breitere Anwendung dieser Technologie zu ermöglichen.
 
@@ -606,7 +592,7 @@ in der Forschungsgemeinschaft fördern~\cite{Amato_2023, Gemeinhardt_2023}. Open
 Entwicklung und Verbreitung von Quantencomputing-Tools beschleunigen.
 
 Zusätzlich wird die Benutzerfreundlichkeit von Low-Code-Plattformen hervorgehoben, um deren Akzeptanz zu erhöhen~\cite{Pinho_2022, Prinz_2021}. 
-Eine benutzerfreundliche Gestaltung könnte entscheidend sein, um die Nutzung von Low-Code-Tools im Quantencomputing zu fördern.
+Eine benutzerfreundliche Gestaltung könnte entscheidend sein, um die Nutzung von Low-Code-Werkzeuge im Quantencomputing zu fördern.
 
 Diese Trends zeigen, dass die Kombination von Low-Code-Entwicklung und Quantencomputing vielversprechend ist, um die 
 Barrieren für den Einsatz von Quantencomputing zu senken und die Innovationskraft in diesem Bereich zu fördern.
@@ -646,7 +632,7 @@ wie Low-Code-Entwicklungsansätze effektiv in die Konzeption und Entwicklung von
 integriert werden können, unter besonderer Berücksichtigung von Model-Driven Engineering (MDE) und Open-Source-Prinzipien.
 
 Die Analyse zeigt, dass Low-Code-Entwicklungsansätze durch die Bereitstellung visueller Entwicklungsumgebungen 
-und die Automatisierung komplexer Codierprozesse einen niedrigschwelligen Zugang zur Entwicklung von 
+und die Automatisierung komplizierterer Programmierprozesse einen niedrigschwelligen Zugang zur Entwicklung von 
 Quantenalgorithmen ermöglichen~\cite{Sahay_2020, Bock_2021}. Diese Ansätze können die Einstiegshürden senken und 
 die Technologie für eine breitere Nutzerschicht zugänglich machen, einschließlich derjenigen ohne tiefgehende 
 Programmierkenntnisse.
@@ -659,13 +645,13 @@ Vorgehensweise kann die Effizienz und die Qualität der entwickelten Anwendungen
 Darüber hinaus betonen die Studien die Bedeutung von Open-Source-Prinzipien. Open-Source-Tools bieten nicht nur 
 die Möglichkeit zur freien Anpassung und Erweiterung, sondern fördern auch die Kollaboration und den Wissenstransfer 
 innerhalb der Entwicklergemeinschaft~\cite{Amato_2023, Ahmad_2023}. Die Verfügbarkeit von Open-Source-Lösungen 
-könnte zur Innovationskraft und zur Verbreitung von Quantencomputing-Technologien beitragen.
+könnte zur Entwicklung und zur Verbreitung von Lösungen des Quantencomputings beitragen.
 
 Die Kombination dieser Erkenntnisse legt nahe, dass die Integration von Low-Code-Entwicklungsansätzen und MDE in 
 die Quantencomputing-Entwicklung sowohl technische als auch organisatorische Vorteile bietet. Die Verwendung von 
-Low-Code-Tools und MDE könnte die Entwicklungszeiten verkürzen, die Qualität der Software erhöhen und eine breitere 
+Low-Code-Werkzeugen und MDE könnte die Entwicklungszeiten verkürzen, die Qualität der Software erhöhen und eine breitere 
 Akzeptanz und Nutzung von Quantencomputing fördern. Zudem könnte der Einsatz von Open-Source-Software eine flexible 
-und nachhaltige Weiterentwicklung der Technologien ermöglichen, was langfristig zur Stabilität und zum Wachstum des 
+und nachhaltige Weiterentwicklung der Software ermöglichen, was langfristig zur Stabilität und zum Wachstum des 
 Quantencomputing-Ökosystems beitragen könnte.
 
 Zusammenfassend zeigen die Ergebnisse, dass ein Low-Code-Framework für Quantencomputing technisch machbar und 
@@ -685,7 +671,7 @@ solcher Ansätze evaluieren~\cite{Perez-Delgado_2020, Gemeinhardt_2021}. Zukünf
 darauf abzielen, konkrete Prototypen zu entwickeln und zu testen, um die praktische Anwendbarkeit von 
 Low-Code-Entwicklungsansätzen im Quantencomputing zu validieren.
 
-Ein weiterer unterforschter Bereich betrifft die Integration von Model-Driven Engineering (MDE) mit Low-Code-Plattformen 
+Ein weiterer unerforschter Bereich betrifft die Integration von Model-Driven Engineering (MDE) mit Low-Code-Plattformen 
 im Kontext des Quantencomputings. Während MDE für klassische Softwareentwicklung gut etabliert ist, gibt es nur wenige 
 Studien, die sich mit der spezifischen Anwendung von MDE für Quantenalgorithmen und -anwendungen 
 beschäftigen~\cite{Gemeinhardt_2023, Perez-Castillo_2022}. Zukünftige Forschung könnte untersuchen, wie MDE-Prinzipien 
@@ -700,8 +686,7 @@ Bereich zu fördern und die damit verbundenen technischen und organisatorischen 
 
 Insgesamt zeigt die Analyse, dass es mehrere vielversprechende Forschungsrichtungen gibt, die weiterverfolgt werden sollten. 
 Dazu gehören die empirische Validierung von Low-Code-Ansätzen im Quantencomputing, die Anpassung und Anwendung von MDE für 
-Quantenalgorithmen sowie die Entwicklung und Förderung von Open-Source-Lösungen in diesem Bereich. Durch die gezielte 
-Untersuchung dieser Themen können wertvolle Beiträge zur Weiterentwicklung und Verbreitung von Quantencomputing-Technologien geleistet werden.
+Quantenalgorithmen sowie die Entwicklung und Förderung von Open-Source-Lösungen in diesem Bereich. 
 
 \paragraph{Kritische Analyse der Qualität und Relevanz der gefundenen Studien}
 
@@ -749,16 +734,16 @@ und die Qualität der resultierenden Anwendungen verbessert werden~\cite{France_
 das es ermöglicht, Quantenprogramme auf hoher Abstraktionsebene zu entwerfen und automatisch in ausführbaren Code zu transformieren, 
 ist hierbei besonders vorteilhaft.
 
-Ein zentrales Ziel des Low-Code-Ansatzes ist es, die Barrieren für die Nutzung von Quantencomputing-Technologien zu senken und 
+Ein zentrales Ziel des Low-Code-Ansatzes ist es, die Barrieren für die Nutzung von Quantencomputing zu senken und 
 diese einem breiteren Spektrum von Nutzern zugänglich zu machen. Dies wird durch die Bereitstellung intuitiver, grafischer 
 Entwicklungswerkzeuge erreicht, die auch von Nicht-Experten genutzt werden können. Die Ergebnisse zeigen, dass visuelle 
-Programmierung und benutzerfreundliche Schnittstellen entscheidend sind, um die Akzeptanz und Verbreitung von Low-Code-Tools 
+Programmierung und benutzerfreundliche Schnittstellen entscheidend sind, um die Akzeptanz und Verbreitung von Low-Code-Werkzeuge 
 im Quantencomputing zu fördern~\cite{Khorram_2020}.
 
 Die Untersuchung hat gezeigt, dass Open-Source-Lösungen wichtige Vorteile bieten, darunter erhöhte Zugänglichkeit, 
 Anpassungsfähigkeit und Innovationskraft. Daher wird empfohlen, das entwickelte Framework als Open-Source-Tool bereitzustellen, 
-um eine breite Nutzung und kontinuierliche Weiterentwicklung durch die Community zu ermöglichen. Open-Source-Modelle können 
-auch dazu beitragen, Vertrauen in die verwendeten Technologien zu schaffen und die Zusammenarbeit zwischen Forschung und 
+um eine breite Nutzung und kontinuierliche Weiterentwicklung durch die Community zu ermöglichen. Open-Source könnte 
+auch dazu beitragen, mehr Transparenz zu schaffen und die Zusammenarbeit zwischen Forschung und 
 Industrie zu fördern~\cite{Cabot_2020}.
 
 Bei der Entwicklung des Low-Code-Frameworks für Quantencomputing sollten folgende spezifische Punkte berücksichtigt werden:
@@ -787,7 +772,7 @@ Bei der Entwicklung des Low-Code-Frameworks für Quantencomputing sollten folgen
 \end{itemize}
 
 Durch die Berücksichtigung dieser Aspekte kann ein wertvolles Werkzeug geschaffen werden, das die Entwicklung von Quantenanwendungen 
-erleichtert und die breite Nutzung dieser zukunftsweisenden Technologie fördert. Diese Empfehlungen basieren auf der Synthese der 
+erleichtert und die breitere Nutzung dieser fördert. Diese Empfehlungen basieren auf der Synthese der 
 identifizierten Studien und sollen als Leitlinien für die Entwicklung eines effektiven und benutzerfreundlichen Low-Code-Frameworks 
 für Quantencomputing-Anwendungen dienen. 
 
@@ -832,4 +817,4 @@ für Quantencomputing-Anwendungen dienen.
 %         \end{itemize}
 % \end{itemize}
 
-\input{overview-low-code-tools-german}
+\input{overview-low-code-tools-german.tex}

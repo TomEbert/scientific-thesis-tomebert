@@ -510,6 +510,30 @@
   % belowskip=0mm, %DE: deaktivieren, falls man lstlistings direkt als floating object benutzt (\begin{lstlisting}[float,...])
   captionpos=b
 }
+\lstdefinelanguage{Excel}{
+    keywords={IF, SUM, AVERAGE, COUNT, AND, OR, NOT},
+    morekeywords={=},
+    sensitive=false,
+    alsoletter={=},
+    morecomment=[l]{'},
+    morestring=[b]",
+    columns=fullflexible,
+}
+
+\lstset{
+    language=Excel,
+    basicstyle=\ttfamily\small, % Schriftgröße und -art
+    keywordstyle=\color{blue},  % Farbe für Schlüsselwörter
+    commentstyle=\color{green!60!black}, % Farbe für Kommentare
+    stringstyle=\color{red}, % Farbe für Zeichenketten
+    showstringspaces=false,
+    breaklines=false, % Zeilen umbrechen
+    breakatwhitespace=true,
+    frame=single, % Rahmen um den Code
+    tabsize=4, % Tabulatorgröße
+    captionpos=b % Position der Caption
+    breakindent=2em,
+}
 
 \ifluatex
 \else
